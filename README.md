@@ -138,5 +138,6 @@ sudo cp -R $HOME/Downloads/nerdfonts/ /usr/share/fonts/
 ```
 
 ## Credits 
-
+[linuxmobile's hyprland dotfiles](https://github.com/linuxmobile/hyprland-dots)
+[Chris Titus Tech's hyprland dotfiles](https://github.com/ChrisTitusTech/hyprland-titus/)
 
