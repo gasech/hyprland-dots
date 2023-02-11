@@ -109,8 +109,8 @@ Installing stow
 ```bash
 yay -S stow
 cd ~ # make sure you are in home directory before cloning this repo
-git clone https://github.com/gasech/arrozada.git
-cd arrozada
+git clone https://github.com/gasech/hyprland-dots.git
+cd hyprland-dots 
 ```
 
 Stowing configs
