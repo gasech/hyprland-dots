@@ -127,7 +127,7 @@ stow */ # stows anything that is in a folder e.g ignores README.md
 ## Setting up Nerd fonts
 Nerd fonts allows you to have nice unicode icons and they look really nice. I personally use CascadiaCode and that's how I install them:
 
-```
+```bash
 mkdir -p $HOME/Downloads/nerdfonts/
 cd $HOME/Downloads/
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.1/CascadiaCode.zip
