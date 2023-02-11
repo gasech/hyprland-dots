@@ -1,5 +1,4 @@
 # 🌌 Hyprland Dotfiles 
-These are my config files for Hyprland + Wayland, feel free to copy anything! :)
 
 ![Screenshot](/screenshot.png)
 
