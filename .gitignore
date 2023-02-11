@@ -1,0 +1,4 @@
+# newsboat
+newsboat/.newsboat/urls
+newsboat/.newsboat/cache.db
+newsboat/.newsboat/cache.db.lock
