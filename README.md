@@ -1,7 +1,7 @@
 # 🌌 Hyprland Dotfiles 
 These are my config files for Hyprland + Wayland, feel free to copy anything! :)
 
-![Hyprland Logo](https://hyprland.org/imgs/hyprland.png)
+![Screenshot](/screenshot.png)
 
 ## Sections
 <!-- vim-markdown-toc Marked -->
@@ -138,6 +138,5 @@ sudo cp -R $HOME/Downloads/nerdfonts/ /usr/share/fonts/
 ```
 
 ## Credits 
-[linuxmobile's hyprland dotfiles](https://github.com/linuxmobile/hyprland-dots)
-[Chris Titus Tech's hyprland dotfiles](https://github.com/ChrisTitusTech/hyprland-titus/)
-
+* [linuxmobile's hyprland dotfiles](https://github.com/linuxmobile/hyprland-dots)
+* [Chris Titus Tech's hyprland dotfiles](https://github.com/ChrisTitusTech/hyprland-titus/)
