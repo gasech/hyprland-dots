@@ -11,8 +11,9 @@
   * [Setting up Hyprland](#setting-up-hyprland)
   * [Packages](#packages)
   * [Setting up zsh + zap](#setting-up-zsh-+-zap)
-* [Stow](#stow)
+  * [Stow](#stow)
 * [Setting up Nerd fonts](#setting-up-nerd-fonts)
+* [To-do](#to-do)
 * [Credits](#credits)
 
 <!-- vim-markdown-toc -->
@@ -24,7 +25,7 @@
 ## Installation Guide 
 > **Warning** 
 >
-> This installation guide is for future self. Some steps might not be completed, updated or even tested. Proceed if you know at you are doing.
+> This installation guide is for future self. Some steps might not be completed, updated or even tested. Proceed if you know what you are doing.
 
 ### Installing yay
 This part is optional, you can use pacman or paru, I like yay.
@@ -83,15 +84,15 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 
 ### Packages
 
-| Type| Package(s)    |
+| Type | Package(s)    |
 |--------------- | --------------- |
 | Audio  | pavucontrol pamixer  |
+| Browser | firefox | 
 | Authentication Agent  | polkit-kde-agent  |
-| Emojis  | noto-fonts-emoji  |
 | Launcher  | rofi  |
 | File Manager  | ffmpegthumbnailer file-roller thunar thunar-archive-plugin   |
 | Notifications  |  dunst  |
-| RSS Feed Reader  | newsboat  |
+| Misc | newsboat noto-fonts-emoji unzip  |
 | Terminal Emulator | kitty exa zsh  |
 | Screenshotting | grimblast-git |
 | Screen Lock | swaylock wlogout |
@@ -99,7 +100,7 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S stow thunar ffmpegthumbnailer thunar-archive-plugin file-roller rofi polkit-kde-agent dunst noto-fonts-emoji pavucontrol pamixer kitty newsboat exa zsh grimblast-git swaylock wlogout
+yay -S firefox stow thunar ffmpegthumbnailer thunar-archive-plugin file-roller rofi polkit-kde-agent dunst noto-fonts-emoji pavucontrol pamixer kitty newsboat exa zsh grimblast-git swaylock wlogout unzip
 ```
 
 ### Setting up zsh + zap 
@@ -112,7 +113,7 @@ chsh -s $(which zsh)
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh)
 ```
 
-## Stow 
+### Stow 
 Stow is a nice way of creating symlinks (Symbolic Links) according to the tree of the target, so you can use stow to quickly copy any config. 
 
 ```bash
@@ -138,6 +139,13 @@ unzip '*.zip' -d $HOME/Downloads/nerdfonts/
 rm -rf *.zip
 sudo cp -R $HOME/Downloads/nerdfonts/ /usr/share/fonts/
 ```
+
+## To-do 
+
+* [ ] Music Player config
+* [ ] Video Player config
+* [ ] Fix Rofi Launcher
+* [ ] Get a nice file manager theme
 
 ## Credits 
 * [linuxmobile's hyprland dotfiles](https://github.com/linuxmobile/hyprland-dots)
