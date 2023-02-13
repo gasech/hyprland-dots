@@ -22,7 +22,9 @@
 * Archinstall with Sway Profile and Pulse Audio (Not really a requirement, I usually just run these setting before installing Hyprland)
 
 ## Installation Guide 
-`⚠️ Important: This installation guide is for future self. Some steps might not be completed, updated or even tested. Proceed if you know at you are doing.`
+> **Warning** 
+>
+> This installation guide is for future self. Some steps might not be completed, updated or even tested. Proceed if you know at you are doing.
 
 ### Installing yay
 This part is optional, you can use pacman or paru, I like yay.
@@ -39,12 +41,14 @@ cd .. && rm -rf yay
 ### Setting up Hyprland
 Please read this before installing if you are using a [Nvidia GPU](https://wiki.hyprland.org/Nvidia/) 
 
-```bash
-# Hyprland + Wayland: hyprland-git
-# Status Bar: waybar-hyprland-git
-# Wallpapers: hyprpaper-git
-# XDG Desktop Portal: xdg-desktop-portal-hyprland-git 
+| Type | Packages(s) |
+|--------------- | --------------- |
+| Hyprland + Wayland  | hyprland-git   |
+| Status Bar  |  waybar-hyprland-git |
+| Wallpaper |  hyprpaper-git |
+| XDG Desktop Portal  | xdg-desktop-portal-hyprland-git  |
 
+```bash
 yay -S hyprland-git hyprpaper-git waybar-hyprland-git xdg-desktop-portal-hyprland-git
 ```
 
@@ -81,16 +85,16 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 
 | Type| Package(s)    |
 |--------------- | --------------- |
-| Audio  | pavucontrol, pamixer  |
+| Audio  | pavucontrol pamixer  |
 | Authentication Agent  | polkit-kde-agent  |
 | Emojis  | noto-fonts-emoji  |
 | Launcher  | rofi  |
-| File Manager  | ffmpegthumbnailer, file-roller, thunar, thunar-archive-plugin,   |
+| File Manager  | ffmpegthumbnailer file-roller thunar thunar-archive-plugin   |
 | Notifications  |  dunst  |
 | RSS Feed Reader  | newsboat  |
-| Terminal Emulator | kitty, exa, zsh  |
+| Terminal Emulator | kitty exa zsh  |
 | Screenshotting | grimblast-git |
-| Screen Lock | swaylock, wlogout |
+| Screen Lock | swaylock wlogout |
 
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
