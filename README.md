@@ -9,7 +9,7 @@
 * [Installation Guide](#installation-guide)
   * [Installing yay](#installing-yay)
   * [Setting up Hyprland](#setting-up-hyprland)
-  * [Downloading apps](#downloading-apps)
+  * [Packages](#packages)
   * [Setting up zsh + zap](#setting-up-zsh-+-zap)
 * [Stow](#stow)
 * [Setting up Nerd fonts](#setting-up-nerd-fonts)
@@ -77,21 +77,25 @@ Now you can execute `wrappedh1` and Hyprland should start "normally" with its de
 
 You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 
-### Downloading apps
-If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
-```bash
-# Audio: pavucontrol, pamixer
-# Authentication Agent: polkit-kde-agent
-# Emojis: noto-fonts-emoji
-# Launcher: rofi 
-# File Manager: thunar, ffmpegthumbnailer, thunar-archive-plugin, file-roller
-# Notifications: dunst
-# RSS Feed Reader: newsboat
-# Terminal: kitty, zsh, exa 
-# Screenshot: grimblast-git
-# Screen Lock Utility: swaylock, wlogout
+### Packages
 
-yay -S thunar ffmpegthumbnailer thunar-archive-plugin file-roller rofi polkit-kde-agent dunst noto-fonts-emoji pavucontrol pamixer kitty newsboat exa zsh grimblast-git swaylock wlogout
+| Type| Package(s)    |
+|--------------- | --------------- |
+| Audio  | pavucontrol, pamixer  |
+| Authentication Agent  | polkit-kde-agent  |
+| Emojis  | noto-fonts-emoji  |
+| Launcher  | rofi  |
+| File Manager  | ffmpegthumbnailer, file-roller, thunar, thunar-archive-plugin,   |
+| Notifications  |  dunst  |
+| RSS Feed Reader  | newsboat  |
+| Terminal Emulator | kitty, exa, zsh  |
+| Screenshotting | grimblast-git |
+| Screen Lock | swaylock, wlogout |
+
+If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
+
+```bash
+yay -S stow thunar ffmpegthumbnailer thunar-archive-plugin file-roller rofi polkit-kde-agent dunst noto-fonts-emoji pavucontrol pamixer kitty newsboat exa zsh grimblast-git swaylock wlogout
 ```
 
 ### Setting up zsh + zap 
@@ -99,6 +103,7 @@ I like using zsh with zap because it's simple and fast to setup everything.
 
 ```bash
 chsh -s $(which zsh)
+
 # restart terminal then use 
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh)
 ```
@@ -106,22 +111,15 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh)
 ## Stow 
 Stow is a nice way of creating symlinks (Symbolic Links) according to the tree of the target, so you can use stow to quickly copy any config. 
 
-Installing stow
 ```bash
-yay -S stow
 cd ~ # make sure you are in home directory before cloning this repo
 git clone https://github.com/gasech/hyprland-dots.git
 cd hyprland-dots 
-```
 
-Stowing configs
-```bash
 stow zsh # stows only zsh
-stow kitty newsboat # multiple stow 
-```
 
-Or just stow everything
-```bash
+stow kitty newsboat # multiple stow 
+
 stow */ # stows anything that is in a folder e.g ignores README.md
 ```
 
