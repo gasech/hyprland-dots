@@ -116,11 +116,10 @@
     }
   },
   "network": {
-    "interface": "wlan0",
     "format": "{ifname}",
     "format-wifi": "  {signalStrength}%",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "format-disconnected": "", //An empty format will hide the module.
+    "format-ethernet": "󰈀 {ipaddr}/{cidr} ",
+    "format-disconnected": "󰈂 Disconnected", //An empty format will hide the module.
     "tooltip-format": "{ifname} via {gwaddr} ",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
     "tooltip-format-ethernet": "{ifname} ",
