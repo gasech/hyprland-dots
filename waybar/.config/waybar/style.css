@@ -9,12 +9,11 @@
 
 window#waybar {
   color: #cdd6f4;
-  background-color: rgba(26,27,38,0);
+  background-color: rgba(26,27,38,0.8);
 }
 
 tooltip {
   border-style: solid;
-  background-color: rgba(26,27,38,0);
 }
 
 #custom-updates,
@@ -29,18 +28,17 @@ tooltip {
 #cpu,
 #disk,
 #backlight {
-  padding: 3px 12px;
+  padding: 3px 8px;
   color: white;
-  background-color: rgba(26,27,38,0.8);
 }
 
 #workspaces button {
-  color: #24283b;
+  color: white;
   margin-right: 5px;
 }
 
 #workspaces button.active {
-  color: white;
+  background-color: #7aa7f2;
 }
 
 #workspaces button.focused {
@@ -64,8 +62,8 @@ tooltip {
 }
 
 .modules-left,
-.modules-center,
 .modules-right {
-  margin-top: 10px;
-  border: 2px solid #7aa2f7;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+

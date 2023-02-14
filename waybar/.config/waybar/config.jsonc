@@ -5,24 +5,22 @@
   "exclusive": true,
   "passtrough": false,
   "gtk-layer-shell": true,
-  "margin-left": 10,
-  "margin-right": 10,
   "height": 30,
+  "spacing": 5,
   "modules-left": [
     "cpu",
     "memory",
     "disk",
     "wlr/workspaces"
   ],
-  "modules-center": [
-    "clock"
-  ],
+  "modules-center": [],
   "modules-right": [
     "tray",
     "custom/updates",
     "network",
     "battery",
-    "pulseaudio"
+    "pulseaudio",
+    "clock"
   ],
   "hyprland/window": {
     "format": "{}"
@@ -32,17 +30,7 @@
     "on-scroll-down": "hyprctl dispatch workspace e-1",
     "all-outputs": true,
     "on-click": "activate",
-    "format": "{icon}",
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "urgent": "",
-      "active": "",
-      "default": ""
-    }
+    "format": "{name}"
   },
   "battery": {
     "interval": 5,
@@ -63,20 +51,20 @@
   },
   "cpu": {
     "interval": 10,
-    "format": " {usage}%",
+    "format": " CPU {usage}%",
     "max-length": 10,
     "on-click": ""
   },
   "memory": {
     "interval": 30,
-    "format": " {}%",
+    "format": " Memory {}%",
     "on-click": "kitty --title all_is_kitty sh -c 'btop'",
-    "max-length": 10
+    "max-length": 50
   },
   "disk": {
-    "format": " {percentage_used}% ({free})",
+    "format": " Disk {percentage_used}% ({free})",
     "tooltip": true,
-    "interval": 3
+    "interval": 30
   },
   "custom/updates": {
     "exec": "(yay -Qua) | wc -l",
@@ -118,11 +106,11 @@
   "network": {
     "format": "{ifname}",
     "format-wifi": "  {signalStrength}%",
-    "format-ethernet": "󰈀 {ipaddr}/{cidr} ",
-    "format-disconnected": "󰈂 Disconnected", //An empty format will hide the module.
+    "format-ethernet": "󰈀  Connected",
+    "format-disconnected": "󰈂 Disconnected",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-ethernet": "{ifname} | {ipaddr}/{cidr} ",
     "tooltip-format-disconnected": "Disconnected",
     "on-click": "nm-connection-editor",
     "max-length": 50
