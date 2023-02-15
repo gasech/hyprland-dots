@@ -17,9 +17,9 @@ color article             color15 default
 
 # ignore
 ignore-mode    "display"
-ignore-article "regex:https?://twiiit.com/.*"               "title =~ \"^R to\""   # ignore twitter replies
-ignore-article "regex:https?://twiiit.com/.*"               "title =~ \"^RT by\""  # ignore twitter retweets
-ignore-article "regex:https?://www.youtube.com/.*"          "title =~ \"#shorts\"" # ignore youtube shorts
+ignore-article "regex:https?://ntr.frail.duckdns.org/.*"     "title =~ \"^R to\""   # ignore twitter replies
+ignore-article "regex:https?://ntr.frail.duckdns.org/.*"     "title =~ \"^RT by\""  # ignore twitter retweets
+ignore-article "regex:https?://www.youtube.com/.*"           "title =~ \"#shorts\"" # ignore youtube shorts
 
 # format
 feedlist-format    "%n %9u %t"                # unread  | (unread/total) | title 
