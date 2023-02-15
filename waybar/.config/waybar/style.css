@@ -42,7 +42,6 @@ tooltip {
 
 #workspaces button {
   color: white;
-  margin-right: 5px;
 }
 
 #workspaces button.active {

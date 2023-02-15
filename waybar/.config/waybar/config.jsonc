@@ -19,6 +19,7 @@
   "modules-center": [],
   "modules-right": [
     "tray",
+    "custom/separator",
     "custom/updates",
     "custom/separator",
     "network",
@@ -86,9 +87,10 @@
     "spacing": 10
   },
   "clock": {
-    "timezone": "America/Sao_Paulo",
-    "format": "{:  %R    %d/%m}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "format": "<span color='#ffffff'> </span> {:%a %b %d}",
+    "format-alt": "<span color='#ffffff'></span> {:%I:%M %p}"
+    // "format": "{:%a %b %d}",
+    // "format-alt": "{:%I:%M %p}"
   },
   "pulseaudio": {
     "format": "{icon}  {volume}%",
@@ -115,7 +117,7 @@
   "network": {
     "format": "{ifname}",
     "format-wifi": "  {signalStrength}%",
-    "format-ethernet": "󰈀 Connected",
+    "format-ethernet": "󰈀  Connected",
     "format-disconnected": "󰈂 Disconnected",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
