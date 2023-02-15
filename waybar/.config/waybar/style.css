@@ -32,6 +32,14 @@ tooltip {
   color: white;
 }
 
+#tray {
+  margin-bottom: 2px;
+}
+
+#custom-separator {
+  color: grey;
+}
+
 #workspaces button {
   color: white;
   margin-right: 5px;

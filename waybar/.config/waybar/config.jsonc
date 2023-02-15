@@ -9,17 +9,23 @@
   "spacing": 5,
   "modules-left": [
     "cpu",
+    "custom/separator",
     "memory",
+    "custom/separator",
     "disk",
+    "custom/separator",
     "wlr/workspaces"
   ],
   "modules-center": [],
   "modules-right": [
     "tray",
     "custom/updates",
+    "custom/separator",
     "network",
     "battery",
+    "custom/separator",
     "pulseaudio",
+    "custom/separator",
     "clock"
   ],
   "hyprland/window": {
@@ -62,7 +68,7 @@
     "max-length": 50
   },
   "disk": {
-    "format": " Disk {percentage_used}% ({free})",
+    "format": " Disk {percentage_used}%",
     "tooltip": true,
     "interval": 30
   },
@@ -71,8 +77,11 @@
     "interval": 7200,
     "format": " {}"
   },
+  "custom/separator": {
+    "format": "∣"
+  },
   "tray": {
-    "icon-size": 13,
+    "icon-size": 14,
     "tooltip": false,
     "spacing": 10
   },
@@ -82,7 +91,7 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}  {volume}%",
     "tooltip": false,
     "format-muted": " Muted",
     "on-click": "pamixer -t",
@@ -106,7 +115,7 @@
   "network": {
     "format": "{ifname}",
     "format-wifi": "  {signalStrength}%",
-    "format-ethernet": "󰈀  Connected",
+    "format-ethernet": "󰈀 Connected",
     "format-disconnected": "󰈂 Disconnected",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
