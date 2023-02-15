@@ -23,7 +23,9 @@
     "custom/updates",
     "custom/separator",
     "network",
-    "battery",
+    // uncomment if on laptop
+    // "custom/separator",
+    // "battery",
     "custom/separator",
     "pulseaudio",
     "custom/separator",

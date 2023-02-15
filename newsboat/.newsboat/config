@@ -1,19 +1,19 @@
 # general
-auto-reload               yes
+auto-reload               no
 cleanup-on-quit           yes
 max-items                 50
 prepopulate-query-feeds   yes
 reload-threads            100
 
 # colors
-color title               color15  color33
-color info                color15  color33
+color title               color4   color0
+color info                color4   color0
 color background          default  default
 color listnormal          default  default
 color listnormal_unread   color15  default bold
 color listfocus           color0   color4
 color listfocus_unread    color4   default reverse bold
-color article             color15 default 
+color article             color15  default 
 
 # ignore
 ignore-mode    "display"
