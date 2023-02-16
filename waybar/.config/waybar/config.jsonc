@@ -95,10 +95,11 @@
     // "format-alt": "{:%I:%M %p}"
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon} {volume}%",
     "tooltip": false,
     "format-muted": " Muted",
     "on-click": "pamixer -t",
+    "on-click-right": "pavucontrol",
     "on-scroll-up": "pamixer -i 5",
     "on-scroll-down": "pamixer -d 5",
     "scroll-step": 5,
@@ -118,8 +119,8 @@
   },
   "network": {
     "format": "{ifname}",
-    "format-wifi": "  {signalStrength}%",
-    "format-ethernet": "󰈀  Connected",
+    "format-wifi": "  Wifi {signalStrength}%",
+    "format-ethernet": "󰈀 Ethernet",
     "format-disconnected": "󰈂 Disconnected",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",

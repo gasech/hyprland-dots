@@ -49,7 +49,8 @@ tooltip {
 }
 
 #workspaces button.focused {
-  background-color: #8963ef;
+  background-color: rgba(26,27,38,0.8);
+  color: black;
 }
 
 #workspaces button.urgent {
@@ -58,8 +59,8 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background-color: #8963ef;
-  color: #cdd6f4;
+  background-color: rgba(26,27,38,0.8);
+  color: black;
 }
 
 #window {
