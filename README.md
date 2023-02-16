@@ -69,7 +69,7 @@ cd ~
 # export WLR_NO_HARDWARE_CURSORS=1
 # export WLR_RENDERER_ALLOW_SOFTWARE=1
 
-# log WLR errors and logs to the hyprland log, usually recommended 
+# log WLR errors and logs to the hyprland log, usually recommended
 export HYPRLAND_LOG_WLR=1
 
 # tell XWayland to use a cursor theme
@@ -95,7 +95,7 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 | Launcher  | rofi  |
 | File Manager  | ffmpegthumbnailer file-roller thunar thunar-archive-plugin   |
 | Notifications  |  dunst  |
-| Misc | newsboat noto-fonts-emoji unzip  |
+| Misc | newsboat noto-fonts-emoji tldr stow unzip  |
 | Terminal Emulator | kitty exa zsh  |
 | Screenshotting | grimblast-git |
 | Screen Lock | swaylock wlogout |
@@ -103,7 +103,7 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S firefox stow thunar ffmpegthumbnailer thunar-archive-plugin file-roller rofi polkit-kde-agent dunst noto-fonts-emoji pavucontrol pamixer kitty newsboat exa zsh grimblast-git swaylock wlogout unzip
+yay -S firefox stow thunar ffmpegthumbnailer thunar-archive-plugin file-roller rofi polkit-kde-agent dunst noto-fonts-emoji pavucontrol pamixer kitty newsboat exa zsh grimblast-git swaylock wlogout tldr unzip
 ```
 
 ### Setting up zsh + zap 
@@ -125,16 +125,20 @@ cd .config
 rm -rf hypr
 rm -rf kitty
 
-cd ~ # make sure you are in home directory before cloning this repo
+# make sure you are in home directory before cloning this repo
+cd ~ 
 
 git clone https://github.com/gasech/hyprland-dots.git
 cd hyprland-dots 
 
-stow zsh # stows only zsh
+# stows only zsh
+stow zsh 
 
-stow kitty newsboat # multiple stow 
+# multiple stow 
+stow kitty newsboat 
 
-stow */ # stows anything that is in a folder e.g ignores README.md
+# stows anything that is in a folder e.g ignores README.md
+stow */ 
 ```
 
 ## Setting up Nerd fonts
