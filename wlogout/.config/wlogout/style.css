@@ -1,5 +1,5 @@
 window {
-    font-family: monospace;
+    font-family: CaskaydiaCove Nerd Font,monospace;
     font-size: 14pt;
     color: #cdd6f4; /* text */
     background-color: rgba(30, 30, 46, 0.5);
@@ -10,6 +10,8 @@ button {
     background-position: center;
     background-size: 25%;
     border: none;
+    color: #ced7f4;
+    text-shadow: none;
     background-color: rgba(30, 30, 46, 0);
     margin: 5px;
     transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -20,8 +22,9 @@ button:hover {
 }
 
 button:focus {
-    background-color: #cba6f7;
-    color: #1e1e2e;
+    background-color: #7aa7f2;
+    color: #18182a;
+    text-shadow: none;
 }
 
 #lock {
