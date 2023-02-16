@@ -20,7 +20,9 @@
 
 ## Requirements
 * Fresh installed Arch Linux 
-* Archinstall with Sway Profile (Not really a requirement, I usually just run this setting before installing Hyprland)
+* Archinstall with Sway Profile and Pipewire
+
+> Pipewire is required, since screen sharing won't work without it.
 
 ## Installation Guide 
 > **Warning** 
@@ -89,21 +91,21 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 
 | Type | Package(s)    |
 |--------------- | --------------- |
-| Audio  | pavucontrol pamixer  |
+| Audio  | pamixer pavucontrol pipewire-pulse |
 | Browser | firefox | 
-| Authentication Agent  | polkit-kde-agent  |
-| Launcher  | rofi  |
-| File Manager  | ffmpegthumbnailer file-roller thunar thunar-archive-plugin   |
+| Authentication Agent | polkit-kde-agent  |
+| Launcher | wofi |
+| File Manager | ffmpegthumbnailer file-roller thunar thunar-archive-plugin   |
 | Notifications  |  dunst  |
-| Misc | newsboat noto-fonts-emoji tldr stow unzip  |
-| Terminal Emulator | kitty exa zsh  |
+| Misc | mpv newsboat noto-fonts-emoji tldr stow unzip |
+| Terminal Emulator | kitty exa zsh |
 | Screenshotting | grimblast-git |
 | Screen Lock | swaylock wlogout |
 
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S firefox stow thunar ffmpegthumbnailer thunar-archive-plugin file-roller rofi polkit-kde-agent dunst noto-fonts-emoji pavucontrol pamixer kitty newsboat exa zsh grimblast-git swaylock wlogout tldr unzip
+yay -S firefox mpv stow thunar ffmpegthumbnailer thunar-archive-plugin file-roller wofi polkit-kde-agent dunst noto-fonts-emoji pavucontrol pamixer pipewire-pulse kitty newsboat exa zsh grimblast-git swaylock wlogout tldr unzip
 ```
 
 ### Setting up zsh + zap 
@@ -157,7 +159,7 @@ sudo cp -R $HOME/Downloads/nerdfonts/ /usr/share/fonts/
 
 * [ ] Music Player config
 * [ ] Video Player config
-* [ ] Fix Rofi Launcher
+* [X] Switched to Wofi
 * [ ] Get a nice file manager theme
 
 ## Credits 
