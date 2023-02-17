@@ -88,12 +88,6 @@
     "tooltip": false,
     "spacing": 10
   },
-  "clock": {
-    "format": "<span color='#ffffff'> </span> {:%a %b %d}",
-    "format-alt": "<span color='#ffffff'></span> {:%I:%M %p}"
-    // "format": "{:%a %b %d}",
-    // "format-alt": "{:%I:%M %p}"
-  },
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "tooltip": false,
@@ -128,5 +122,11 @@
     "tooltip-format-disconnected": "Disconnected",
     "on-click-right": "nm-connection-editor",
     "max-length": 50
+  },
+  "clock": {
+    "format": "<span color='#ffffff'> </span> {:%a %b %d}",
+    "format-alt": "<span color='#ffffff'></span> {:%I:%M %p}"
+    // "format": "{:%a %b %d}",
+    // "format-alt": "{:%I:%M %p}"
   }
 }
