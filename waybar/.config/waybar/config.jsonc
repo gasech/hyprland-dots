@@ -126,7 +126,7 @@
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
     "tooltip-format-ethernet": "{ifname} | {ipaddr}/{cidr} ",
     "tooltip-format-disconnected": "Disconnected",
-    "on-click": "nm-connection-editor",
+    "on-click-right": "nm-connection-editor",
     "max-length": 50
   }
 }

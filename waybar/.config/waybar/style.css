@@ -7,6 +7,12 @@
   min-height: 0;
 }
 
+#window {
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
 window#waybar {
   color: #cdd6f4;
   background-color: rgba(26,27,38,0.8);
@@ -45,7 +51,8 @@ tooltip {
 }
 
 #workspaces button.active {
-  background-color: #7aa7f2;
+  background: linear-gradient(45deg, rgba(122,162,247,1) 0%, rgba(148,226,213,1) 100%);
+  color: white;
 }
 
 #workspaces button.focused {
@@ -59,14 +66,8 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background-color: rgba(26,27,38,0.8);
-  color: black;
-}
-
-#window {
-  border-radius: 10px;
-  margin-left: 60px;
-  margin-right: 60px;
+  background-color: rgba(255,255,255,0.05);
+  color: white;
 }
 
 .modules-left,

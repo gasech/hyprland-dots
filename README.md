@@ -13,6 +13,7 @@
   * [Setting up zsh + zap](#setting-up-zsh-+-zap)
   * [Stow](#stow)
 * [Setting up Nerd fonts](#setting-up-nerd-fonts)
+* [Installing XFCE-GTK-Theme and Icons](#installing-xfce-gtk-theme-and-icons)
 * [To-do](#to-do)
 * [Credits](#credits)
 
@@ -95,9 +96,9 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 | Browser | firefox | 
 | Authentication Agent | polkit-kde-agent  |
 | Launcher | wofi |
-| File Manager | ffmpegthumbnailer file-roller thunar thunar-archive-plugin   |
+| File Manager | ffmpegthumbnailer file-roller gvfs thunar thunar-archive-plugin   |
 | Notifications  |  dunst  |
-| Misc | mpv newsboat noto-fonts-emoji tldr stow unzip |
+| Misc | mpv newsboat noto-fonts-emoji tldr stow unzip sxiv |
 | Terminal Emulator | kitty exa zsh |
 | Screenshotting | grimblast-git |
 | Screen Lock | swaylock wlogout |
@@ -105,7 +106,7 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S firefox mpv stow thunar ffmpegthumbnailer thunar-archive-plugin file-roller wofi polkit-kde-agent dunst noto-fonts-emoji pavucontrol pamixer pipewire-pulse kitty newsboat exa zsh grimblast-git swaylock wlogout tldr unzip
+yay -S firefox mpv stow thunar ffmpegthumbnailer gvfs thunar-archive-plugin file-roller wofi polkit-kde-agent dunst noto-fonts-emoji pavucontrol pamixer pipewire-pulse kitty newsboat exa zsh grimblast-git swaylock wlogout tldr unzip sxiv
 ```
 
 ### Setting up zsh + zap 
@@ -155,11 +156,26 @@ rm -rf *.zip
 sudo cp -R $HOME/Downloads/nerdfonts/ /usr/share/fonts/
 ```
 
+## Installing XFCE-GTK-Theme and Icons
+You can use `lxappearance` and `xfce4-settings`
+
+
+```bash
+cd ~/Downloads
+git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
+
+# Installs theme
+sudo cp -r Tokyo-Night-GTK-Theme/themes/Tokyonight-Dark-BL-LB /usr/share/themes/
+# Installs icons
+sudo cp -r Tokyo-Night-GTK-Theme/icons/Tokyonight-Dark /usr/share/icons/
+
+# Deletes folder
+rm -rf Tokyo-Night-GTK-Theme/
+```
+
+
 ## To-do 
 
-* [ ] Music Player config
-* [ ] Video Player config
-* [X] Switched to Wofi
 * [ ] Get a nice file manager theme
 
 ## Credits 
