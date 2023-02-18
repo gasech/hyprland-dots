@@ -93,7 +93,7 @@
     "tooltip": false,
     "format-muted": " Muted",
     "on-click": "pamixer -t",
-    "on-click-right": "pavucontrol",
+    "on-click-right": "killall pavucontrol || pavucontrol",
     "on-scroll-up": "pamixer -i 5",
     "on-scroll-down": "pamixer -d 5",
     "scroll-step": 5,
@@ -120,7 +120,7 @@
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
     "tooltip-format-ethernet": "{ifname} | {ipaddr}/{cidr} ",
     "tooltip-format-disconnected": "Disconnected",
-    "on-click-right": "nm-connection-editor",
+    "on-click-right": "killall nm-connection-editor || nm-connection-editor ",
     "max-length": 50
   },
   "clock": {
