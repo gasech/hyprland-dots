@@ -41,6 +41,36 @@
     "on-click": "activate",
     "format": "{name}"
   },
+  "cpu": {
+    "interval": 10,
+    "format": " CPU {usage}%",
+    "max-length": 10,
+    "on-click": ""
+  },
+  "memory": {
+    "interval": 30,
+    "format": " Memory {}%",
+    "on-click-right": "killall btop || kitty --title btop sh -c 'btop'",
+    "max-length": 50
+  },
+  "disk": {
+    "format": " Disk {percentage_used}%",
+    "tooltip": true,
+    "interval": 30
+  },
+  "custom/updates": {
+    "exec": "(yay -Qu) | wc -l",
+    "interval": 7200,
+    "format": " {}"
+  },
+  "custom/separator": {
+    "format": "∣"
+  },
+  "tray": {
+    "icon-size": 14,
+    "tooltip": false,
+    "spacing": 10
+  },
   "battery": {
     "interval": 5,
     "states": {
@@ -57,36 +87,6 @@
       "",
       ""
     ]
-  },
-  "cpu": {
-    "interval": 10,
-    "format": " CPU {usage}%",
-    "max-length": 10,
-    "on-click": ""
-  },
-  "memory": {
-    "interval": 30,
-    "format": " Memory {}%",
-    "on-click": "kitty --title all_is_kitty sh -c 'btop'",
-    "max-length": 50
-  },
-  "disk": {
-    "format": " Disk {percentage_used}%",
-    "tooltip": true,
-    "interval": 30
-  },
-  "custom/updates": {
-    "exec": "(yay -Qua) | wc -l",
-    "interval": 7200,
-    "format": " {}"
-  },
-  "custom/separator": {
-    "format": "∣"
-  },
-  "tray": {
-    "icon-size": 14,
-    "tooltip": false,
-    "spacing": 10
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
