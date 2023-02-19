@@ -1,4 +1,4 @@
-# 🌌 Hyprland Dotfiles 
+# 🌌 Hyprland Dotfiles
 
 ![Screenshot](https://raw.githubusercontent.com/gasech/hyprland-dots/main/screenshot.png)
 
@@ -7,13 +7,13 @@
 
 * [Requirements](#requirements)
 * [Installation Guide](#installation-guide)
-  * [Installing yay](#installing-yay)
-  * [Setting up Hyprland](#setting-up-hyprland)
+  * [Yay (AUR Helper)](#yay-(aur-helper))
+  * [Hyprland and Dependencies](#hyprland-and-dependencies)
   * [Packages](#packages)
-  * [Setting up zsh + zap](#setting-up-zsh-+-zap)
-  * [Copying config files](#copying-config-files)
-  * [Setting up Nerd fonts](#setting-up-nerd-fonts)
-  * [Installing GTK-XFCE Theme and Icons](#installing-gtk-xfce-theme-and-icons)
+  * [Zsh shell with Zap](#zsh-shell-with-zap)
+  * [Copying config with Stow](#copying-config-with-stow)
+  * [Downloading a Nerd Font](#downloading-a-nerd-font)
+  * [GTK-XFCE Theme and Icons](#gtk-xfce-theme-and-icons)
 * [Credits](#credits)
 
 <!-- vim-markdown-toc -->
@@ -29,7 +29,7 @@
 >
 > This installation guide is for my future self. Some steps might not be completed, updated or even tested. Proceed if you know what you are doing.
 
-### Installing yay
+### Yay (AUR Helper)
 This part is optional, you can use pacman or paru, I like yay.
 
 ```bash
@@ -41,7 +41,7 @@ makepkg -si
 cd .. && rm -rf yay
 ```
 
-### Setting up Hyprland
+### Hyprland and Dependencies
 Please read this before installing if you are using a [Nvidia GPU](https://wiki.hyprland.org/Nvidia/) 
 
 This installation is going to take a while depending on your system.
@@ -89,7 +89,7 @@ Now you can execute `wrappedh1` and Hyprland should start "normally" with its de
 
 You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 
-### Packages
+### Packages 
 
 | Type | Package(s)    |
 |--------------- | --------------- |
@@ -110,7 +110,7 @@ If you are interested in alternatives for some of these programs, you can go to 
 yay -S dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi zsh 
 ```
 
-### Setting up zsh + zap 
+### Zsh shell with Zap
 I like using zsh with zap because it's simple and fast to setup everything.
 
 ```bash
@@ -121,7 +121,7 @@ chsh -s $(which zsh)
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh)
 ```
 
-### Copying config files
+### Copying config with Stow
 Stow is a nice way of creating symlinks (Symbolic Links) according to the tree of the target, so you can use stow to quickly copy any config.
 
 ```bash
@@ -145,7 +145,7 @@ stow kitty newsboat
 stow */ 
 ```
 
-### Setting up Nerd fonts
+### Downloading a Nerd Font
 Nerd fonts allows you to have nice unicode icons and they look really nice. I personally use CascadiaCode and that's how I install them:
 
 ```bash
@@ -157,7 +157,7 @@ rm -rf *.zip
 sudo cp -R $HOME/Downloads/nerdfonts/ /usr/share/fonts/
 ```
 
-### Installing GTK-XFCE Theme and Icons
+### GTK-XFCE Theme and Icons
 You can use `lxappearance` and `xfce4-settings` to apply the theme and icons.
 
 ```bash
