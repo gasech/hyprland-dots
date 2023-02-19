@@ -29,10 +29,7 @@ alias zshconfig="lvim ~/.zshrc"
 
 # ls
 alias ls="exa -la --icons"
-alias l="ls"
-alias ll="ls -l"
-alias la="ls -a"
-alias lla="ls -la"
+alias lst="exa -a --icons --tree -I .git"
 
 # git
 alias gcl='git clone --depth 1'
