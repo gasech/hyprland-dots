@@ -19,7 +19,7 @@ _AUTHOR_NAME_=" $USER"
 _AUTHOR_COLOR_='#b4befe'
 # Get Lists Font With "convert -list font | grep -iE 'font:.*' | nl"
 _FONT_SIZE_=11
-_FONT_='Cartograph-CF-Regular-Nerd-Font-Complete'
+_FONT_='Caskaydia-Cove-Regular-Nerd-Font-Complete'
 
 function check() {
     if [[ $? -eq 1 && ${PIPESTATUS[0]} -eq 1 ]]; then
