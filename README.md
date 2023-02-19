@@ -46,7 +46,7 @@ Please read this before installing if you are using a [Nvidia GPU](https://wiki.
 
 This installation is going to take a while depending on your system.
 
-| Type | Packages(s) |
+| Type | Package(s) |
 |-|--|
 | Hyprland + Wayland  | hyprland-git   |
 | QT Wayland Support | qt5-wayland qt6-wayland |
@@ -102,12 +102,12 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 | Misc | feh mpv newsboat noto-fonts-emoji tldr stow wl-clipboard unzip |
 | Terminal Emulator | kitty exa zsh |
 | Screenshotting | grimblast-git |
-| Screen Lock | swaylock wlogout |
+| Screen Lock | swaylock-effects wlogout |
 
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi zsh 
+yay -S dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi zsh 
 ```
 
 ### Setting up zsh + zap 
