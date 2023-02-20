@@ -1,35 +1,51 @@
-daemonize
-show-failed-attempts
-clock
+# general
+fade-in=0.3
 effect-blur=5x5
-color=1f1d2e80
-font="Inter"
+show-failed-attempts
+ignore-empty-password
+clock
+datestr=%A %B %d
+daemonize
+
+# indicator
 indicator
-indicator-radius=200
-indicator-thickness=20
-line-color=1f1d2e
-ring-color=191724
-inside-color=1f1d2e
-key-hl-color=eb6f92
-separator-color=00000000
-text-color=e0def4
-text-caps-lock-color=""
-line-ver-color=eb6f92
-ring-ver-color=eb6f92
-inside-ver-color=1f1d2e
-text-ver-color=e0def4
-ring-wrong-color=31748f
-text-wrong-color=31748f
-inside-wrong-color=1f1d2e
-inside-clear-color=1f1d2e
-text-clear-color=e0def4
-ring-clear-color=9ccfd8
-line-clear-color=1f1d2e
-line-wrong-color=1f1d2e
-bs-hl-color=31748f
-grace=2
+indicator-radius=180
+indicator-thickness=15
+
+# grace
+grace=0
 grace-no-mouse
 grace-no-touch
-datestr="%d.%m"
-fade-in="0.1"
-ignore-empty-password
+
+# colors 
+color=1a1b2680
+separator-color=00000000
+key-hl-color=7dcfff
+bs-hl-color=7dcfff
+
+# text
+font="Inter"
+text-caps-lock-color=""
+text-clear-color=c0caf5
+text-color=c0caf5
+text-ver-color=c0caf5
+text-wrong-color=f7768e
+
+# inside
+inside-clear-color=1a1b26
+inside-color=1a1b26
+inside-ver-color=1a1b26
+inside-wrong-color=1a1b26
+
+# line
+line-clear-color=1a1b26
+line-color=1a1b26
+line-ver-color=9ece6a
+line-wrong-color=f7768e
+
+# ring
+ring-clear-color=9ccfd8
+ring-color=414868
+ring-ver-color=9ece6a
+ring-wrong-color=f7768e
+
