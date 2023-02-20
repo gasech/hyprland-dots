@@ -4,6 +4,7 @@ cleanup-on-quit           yes
 max-items                 50
 prepopulate-query-feeds   yes
 reload-threads            100
+browser                   firefox
 
 # colors
 color title               color4   color0
@@ -34,3 +35,6 @@ highlight article "\\[embedded flash: [0-9][0-9]*\\]"        green default bold
 highlight article ":.*\\(link\\)$"                           green default
 highlight article ":.*\\(image\\)$"                          green default
 highlight article ":.*\\(embedded flash\\)$"                 green default
+
+# macros
+macro v set browser "mpv '%u'"; open-in-browser; set browser firefox

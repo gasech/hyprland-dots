@@ -15,7 +15,7 @@ plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting" "122dc46"
 
 # zap prompt (theme)
-plug "zap-zsh/zap-prompt"
+plug "zap-zsh/atmachine-prompt"
 
 # zsh
 plug "esc/conda-zsh-completion"

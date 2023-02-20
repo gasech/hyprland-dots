@@ -50,7 +50,7 @@ This installation is going to take a while depending on your system.
 
 | Type | Package(s) |
 |-|--|
-| Hyprland + Wayland  | hyprland-git   |
+| Hyprland + Wayland  | hyprland-git |
 | QT Wayland Support | qt5-wayland qt6-wayland |
 | Status Bar  |  waybar-hyprland-git |
 | Wallpaper |  hyprpaper-git |
@@ -101,7 +101,7 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 | Launcher | wofi |
 | File Manager | ffmpegthumbnailer file-roller gvfs thunar thunar-archive-plugin |
 | Notifications | dunst  |
-| Misc | feh mpv newsboat noto-fonts-emoji tldr stow wl-clipboard unzip |
+| Misc | feh mpv newsboat noto-fonts-emoji tldr stow wl-clipboard unzip yt-dlp |
 | Terminal Emulator | kitty exa zsh |
 | Screenshotting | grimblast-git |
 | Screen Lock | swaylock-effects wlogout |
@@ -109,7 +109,7 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi zsh 
+yay -S dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
 ```
 
 ### Zsh shell with Zap
@@ -160,7 +160,7 @@ sudo cp -R $HOME/Downloads/nerdfonts/ /usr/share/fonts/
 ```
 
 ### GTK-XFCE Theme and Icons
-You can use `lxappearance` and `xfce4-settings` to apply the theme and icons.
+You can use `nwg-look` and `xfce4-settings` to apply the theme and icons.
 
 ```bash
 cd ~/Downloads

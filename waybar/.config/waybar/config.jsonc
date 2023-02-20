@@ -59,7 +59,7 @@
     "interval": 30
   },
   "custom/updates": {
-    "exec": "(yay -Qu) | wc -l",
+    "exec": "yay -Syy && yay -Qu | wc -l",
     "interval": 7200,
     "format": " {}"
   },
