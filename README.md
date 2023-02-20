@@ -1,6 +1,6 @@
 # 🌌 Hyprland Dotfiles
 
-![Screenshot 1](https://raw.githubusercontent.com/gasech/hyprland-dots/main/assets/screenshot.png)
+![Screenshot 1](https://raw.githubusercontent.com/gasech/hyprland-dots/main/assets/screenshot1.png)
 ![Screenshot 2](https://raw.githubusercontent.com/gasech/hyprland-dots/main/assets/screenshot2.png)
 ![Screenshot 3](https://raw.githubusercontent.com/gasech/hyprland-dots/main/assets/screenshot3.png)
 
