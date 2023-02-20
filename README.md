@@ -1,6 +1,8 @@
 # 🌌 Hyprland Dotfiles
 
-![Screenshot](https://raw.githubusercontent.com/gasech/hyprland-dots/main/screenshot.png)
+![Screenshot 1](https://raw.githubusercontent.com/gasech/hyprland-dots/main/assets/screenshot.png)
+![Screenshot 2](https://raw.githubusercontent.com/gasech/hyprland-dots/main/assets/screenshot2.png)
+![Screenshot 3](https://raw.githubusercontent.com/gasech/hyprland-dots/main/assets/screenshot3.png)
 
 ## Sections
 <!-- vim-markdown-toc Marked -->
