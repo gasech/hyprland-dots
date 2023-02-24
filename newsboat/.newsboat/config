@@ -38,3 +38,4 @@ highlight article ":.*\\(embedded flash\\)$"                 green default
 
 # macros
 macro v set browser "mpv '%u'"; open-in-browser; set browser firefox
+macro i set browser "feh '%u'"; open-in-browser; set browser firefox
