@@ -20,8 +20,6 @@
   "modules-right": [
     "tray",
     "custom/separator",
-    "custom/updates",
-    "custom/separator",
     "network",
     // uncomment if on laptop
     // "custom/separator",
@@ -57,11 +55,6 @@
     "format": " Disk {percentage_used}%",
     "tooltip": true,
     "interval": 30
-  },
-  "custom/updates": {
-    "exec": "(yay -Syy && yay -Qu) | wc -l",
-    "interval": 7200,
-    "format": " {}"
   },
   "custom/separator": {
     "format": "∣"
@@ -124,9 +117,6 @@
     "max-length": 50
   },
   "clock": {
-    "format": "<span color='#ffffff'> </span> {:%a %b %d}",
-    "format-alt": "<span color='#ffffff'></span> {:%I:%M %p}"
-    // "format": "{:%a %b %d}",
-    // "format-alt": "{:%I:%M %p}"
+    "format": "{:<span color='#ffffff'> </span>%A, %B %d - <span color='#ffffff'>󱑒</span> %I:%M %p}"
   }
 }

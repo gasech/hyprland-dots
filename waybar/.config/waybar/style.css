@@ -34,7 +34,7 @@ tooltip {
 #cpu,
 #disk,
 #backlight {
-  padding: 3px 4px;
+  padding: 0px 4px;
   color: white;
 }
 
@@ -44,6 +44,7 @@ tooltip {
 
 #custom-separator {
   color: grey;
+  margin-top: 7px;
 }
 
 #workspaces button {
