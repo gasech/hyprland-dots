@@ -1,4 +1,4 @@
 # newsboat
-newsboat/.config/newsboat/urls
-newsboat/.config/newsboat/cache.db
-newsboat/.config/newsboat/cache.db.lock
+urls
+cache.db
+cache.db.lock
