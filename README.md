@@ -44,8 +44,6 @@ cd .. && rm -rf yay
 ```
 
 ### Hyprland and Dependencies
-Please read this before installing if you are using a [Nvidia GPU](https://wiki.hyprland.org/Nvidia/) 
-
 This installation is going to take a while depending on your system.
 
 | Type | Package(s) |
@@ -60,36 +58,15 @@ This installation is going to take a while depending on your system.
 yay -S hyprland-git hyprpaper-git qt5-wayland qt6-wayland waybar-hyprland-git xdg-desktop-portal-hyprland-git
 ```
 
-Create a wrapper to execute Hyprland 
-
-```bash 
-vim ~/.local/bin/wrappedhl
+If you are not using a NVIDIA GPU, please delete the lines 9 to 13 in `hypr/.config/hypr/hyprland.conf`
 ```
-
-Inside *wrappedh1*
-```bash
-#!/bin/sh
-
-cd ~
-# uncomment the next two lines if you are installing in a virtual machine.
-# export WLR_NO_HARDWARE_CURSORS=1
-# export WLR_RENDERER_ALLOW_SOFTWARE=1
-
-# log WLR errors and logs to the hyprland log, usually recommended
-export HYPRLAND_LOG_WLR=1
-
-# tell XWayland to use a cursor theme
-export XCURSOR_THEME=Bibata-Modern-Classic
-
-# set a cursor size
-export XCURSOR_SIZE=24
-
-exec Hyprland
+9  - | env = LIBVA_DRIVER_NAME, nvidia
+10 - │ env = XDG_SESSION_TYPE, wayland
+11 - │ env = __GL_GSYNC_ALLOWED, 0
+12 - │ env = __GLX_VENDOR_LIBRARY_NAME, nvidia
+13 - │ env = GBM_BACKEND, nvidia-drm
 ```
-
-Now you can execute `wrappedh1` and Hyprland should start "normally" with its default settings. 
-
-You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
+Now execute Hyprland in tty with `Hyprland`, exit Hyprland by pressing `Super + SHIFT + Q` or open kitty with `Super + Return` 
 
 ### Packages 
 
@@ -101,7 +78,7 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 | Launcher | wofi |
 | File Manager | ffmpegthumbnailer file-roller gvfs thunar thunar-archive-plugin |
 | Notifications | dunst  |
-| Misc | btop feh mpv newsboat noto-fonts-emoji tldr stow wl-clipboard unzip yt-dlp |
+| Misc | bat btop feh mpv newsboat noto-fonts-emoji tldr stow wl-clipboard unzip yt-dlp |
 | Terminal Emulator | kitty exa zsh |
 | Screenshotting | grimblast-git |
 | Screen Lock | swaylock-effects wlogout |
@@ -109,7 +86,7 @@ You can stop the script by pressing `Super + M` or open kitty with `Super + Q`
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S btop dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
+yay -S bat btop dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
 ```
 
 ### Zsh shell with Zap
