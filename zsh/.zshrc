@@ -27,9 +27,8 @@ alias lvimconfig='lvim ~/.config/lvim/config.lua'
 # zsh 
 alias zshconfig="lvim ~/.zshrc"
 
-# ls
-alias ls="exa -la --icons"
-alias lst="exa -a --icons --tree -I .git"
+# cat
+alias cat='bat'
 
 # git
 alias gcl='git clone --depth 1'
@@ -37,3 +36,7 @@ alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
+
+# ls
+alias ls="exa -la --icons"
+alias lst="exa -a --icons --tree -I .git"
