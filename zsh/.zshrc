@@ -26,9 +26,10 @@ alias lvimconfig='lvim ~/.config/lvim/config.lua'
 
 # zsh 
 alias zshconfig="lvim ~/.zshrc"
+alias hyprconfig="lvim ~/.config/hypr/hyprland.conf"
 
 # cat
-alias cat='bat'
+# alias cat='bat'
 
 # git
 alias gcl='git clone --depth 1'
@@ -40,3 +41,7 @@ alias gp='git push'
 # ls
 alias ls="exa -la --icons"
 alias lst="exa -a --icons --tree -I .git"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
