@@ -16,7 +16,9 @@
     "custom/separator",
     "wlr/workspaces"
   ],
-  "modules-center": [],
+  "modules-center": [
+    "hyprland/window"
+  ],
   "modules-right": [
     "tray",
     "custom/separator",
@@ -26,6 +28,8 @@
     // "battery",
     "custom/separator",
     "pulseaudio",
+    "custom/separator",
+    "hyprland/language",
     "custom/separator",
     "clock"
   ],
@@ -115,6 +119,11 @@
     "tooltip-format-disconnected": "Disconnected",
     "on-click": "killall nm-connection-editor || nm-connection-editor ",
     "max-length": 50
+  },
+  "hyprland/language": {
+    "format": " {}",
+    "format-en": "EN",
+    "format-pt": "PT"
   },
   "clock": {
     "format": "{:<span color='#ffffff'> </span>%A, %B %d - <span color='#ffffff'>󱑒</span> %I:%M %p}"
