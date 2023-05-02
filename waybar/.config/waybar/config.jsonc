@@ -122,8 +122,8 @@
   },
   "hyprland/language": {
     "format": " {}",
-    "format-en": "EN",
-    "format-pt": "PT"
+    "format-en": "ENG",
+    "format-pt": "PT-BR"
   },
   "clock": {
     "format": "{:<span color='#ffffff'> </span>%A, %B %d - <span color='#ffffff'>󱑒</span> %I:%M %p}"
