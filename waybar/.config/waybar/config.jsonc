@@ -88,7 +88,7 @@
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "tooltip": false,
-    "format-muted": " Muted",
+    "format-muted": "󰖁",
     "on-click-right": "pamixer -t",
     "on-click": "killall pavucontrol || pavucontrol",
     "on-scroll-up": "pamixer -i 5",
@@ -104,6 +104,7 @@
       "default": [
         "",
         "",
+        "󰕾",
         ""
       ]
     }
