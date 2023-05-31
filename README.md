@@ -9,13 +9,13 @@
 
 * [Requirements](#requirements)
 * [Installation Guide](#installation-guide)
-  * [Yay (AUR Helper)](#yay-(aur-helper))
-  * [Hyprland and Dependencies](#hyprland-and-dependencies)
-  * [Packages](#packages)
-  * [Zsh shell with Zap](#zsh-shell-with-zap)
-  * [Copying config with Stow](#copying-config-with-stow)
-  * [Downloading a Nerd Font](#downloading-a-nerd-font)
-  * [GTK-XFCE Theme and Icons](#gtk-xfce-theme-and-icons)
+    * [Yay (AUR Helper)](#yay-(aur-helper))
+    * [Hyprland and Dependencies](#hyprland-and-dependencies)
+    * [Packages](#packages)
+    * [Zsh shell with Zap](#zsh-shell-with-zap)
+    * [Copying config with Stow](#copying-config-with-stow)
+    * [Downloading a Nerd Font](#downloading-a-nerd-font)
+    * [GTK-XFCE Theme and Icons](#gtk-xfce-theme-and-icons)
 * [Credits](#credits)
 
 <!-- vim-markdown-toc -->
@@ -50,12 +50,12 @@ This installation is going to take a while depending on your system.
 |-|--|
 | Hyprland + Wayland  | hyprland-git |
 | QT Wayland Support | qt5-wayland qt6-wayland |
-| Status Bar  |  waybar-hyprland-git |
-| Wallpaper |  hyprpaper-git |
+| Status Bar  | waybar-hyprland-git |
+| Wallpaper | swagbg |
 | XDG Desktop Portal  | xdg-desktop-portal-hyprland-git  |
 
 ```bash
-yay -S hyprland-git hyprpaper-git qt5-wayland qt6-wayland waybar-hyprland-git xdg-desktop-portal-hyprland-git
+yay -S hyprland-git qt5-wayland qt6-wayland waybar-hyprland-git swaybg xdg-desktop-portal-hyprland-git
 ```
 
 If you are not using a NVIDIA GPU, please delete the lines 9 to 13 in `hypr/.config/hypr/hyprland.conf`
@@ -78,7 +78,7 @@ Now execute Hyprland in tty with `Hyprland`, exit Hyprland by pressing `Super + 
 | Launcher | wofi |
 | File Manager | ffmpegthumbnailer file-roller gvfs thunar thunar-archive-plugin |
 | Notifications | dunst  |
-| Misc | bat btop feh mpv newsboat noto-fonts-emoji tldr stow wl-clipboard unzip yt-dlp |
+| Misc | bat btop feh mpv newsboat nm-connection-editor noto-fonts-emoji tldr stow wl-clipboard unzip yt-dlp |
 | Terminal Emulator | kitty exa zsh |
 | Screenshotting | grimblast-git |
 | Screen Lock | swaylock-effects wlogout |
@@ -86,7 +86,7 @@ Now execute Hyprland in tty with `Hyprland`, exit Hyprland by pressing `Super + 
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S bat btop dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
+yay -S bat btop dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat nm-connection-editor pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
 ```
 
 ### Zsh shell with Zap
