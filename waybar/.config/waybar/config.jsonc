@@ -16,16 +16,14 @@
     "custom/separator",
     "wlr/workspaces"
   ],
-  "modules-center": [
-    "hyprland/window"
-  ],
+  "modules-center": [],
   "modules-right": [
     "tray",
     "custom/separator",
     "network",
     // uncomment if on laptop
-    // "custom/separator",
-    // "battery",
+    "custom/separator",
+    "battery",
     "custom/separator",
     "pulseaudio",
     "custom/separator",
@@ -88,7 +86,7 @@
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "tooltip": false,
-    "format-muted": "󰖁",
+    "format-muted": "󰖁 Mute",
     "on-click-right": "pamixer -t",
     "on-click": "killall pavucontrol || pavucontrol",
     "on-scroll-up": "pamixer -i 5",
@@ -127,6 +125,6 @@
     "format-pt": "PT-BR"
   },
   "clock": {
-    "format": "{:<span color='#ffffff'> </span>%A, %B %d - <span color='#ffffff'>󱑒</span> %I:%M %p}"
+    "format": "{:<span color='#ffffff'> </span>%A, %B %d  <span color='#ffffff'>󱑒</span> %I:%M %p}"
   }
 }

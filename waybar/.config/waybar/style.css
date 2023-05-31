@@ -2,7 +2,7 @@
   border: none;
   border-radius: 0;
   font-family: CaskaydiaCove Nerd Font, monospace;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   min-height: 0;
 }
@@ -45,7 +45,9 @@ tooltip {
 
 #custom-separator {
   color: grey;
-  margin-top: 7px;
+  margin-top: 1px;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 #workspaces button {
