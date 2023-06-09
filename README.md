@@ -120,13 +120,12 @@ stow zsh
 # multiple stow 
 stow kitty newsboat 
 
-# stows anything that is in a folder e.g ignores README.md
+# stows anything that is in a folder (ignores README.md)
 stow */ 
 ```
 
 ### Downloading a Nerd Font
-Nerd fonts allows you to have nice unicode icons and they look really nice. I personally use CascadiaCode and that's how I install them:
-
+Nerd fonts allows you to have nice unicode icons and they look really nice, I personally use CascadiaCode:
 ```bash
 mkdir -p $HOME/Downloads/nerdfonts/
 cd $HOME/Downloads/

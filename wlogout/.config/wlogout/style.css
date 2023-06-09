@@ -1,6 +1,6 @@
 window {
     font-family: CaskaydiaCove Nerd Font, monospace;
-    font-size: 14pt;
+    font-size: 12pt;
     color: #cdd6f4; 
     background-color: rgba(30, 30, 46, 0.5);
 }
@@ -8,7 +8,7 @@ window {
 button {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 25%;
+    background-size: 20%;
     border: none;
     color: #ced7f4;
     text-shadow: none;

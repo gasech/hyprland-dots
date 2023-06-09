@@ -20,25 +20,20 @@ plug "zap-zsh/atmachine-prompt"
 # zsh
 plug "esc/conda-zsh-completion"
 
-# vim
-alias nvim='lvim'
-alias lvimconfig='lvim ~/.config/lvim/config.lua'
-
-# zsh 
+# alias
 alias zshconfig="lvim ~/.zshrc"
 alias hyprconfig="lvim ~/.config/hypr/hyprland.conf"
+alias lvimconfig='lvim ~/.config/lvim/config.lua'
 
-# cat
-# alias cat='bat'
+alias cat='bat'
+alias nvim='lvim'
 
-# git
 alias gcl='git clone --depth 1'
 alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 
-# ls
 alias ls="exa -la --icons"
 alias lst="exa -a --icons --tree -I .git"
 

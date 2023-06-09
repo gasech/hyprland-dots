@@ -18,13 +18,14 @@ grace-no-mouse
 grace-no-touch
 
 # colors 
-color=1a1b2680
+color=1a1b2620
 separator-color=00000000
 key-hl-color=7dcfff
 bs-hl-color=7dcfff
 
 # text
 font="Inter"
+font-size=96
 text-caps-lock-color=""
 text-clear-color=c0caf5
 text-color=c0caf5
@@ -32,10 +33,10 @@ text-ver-color=c0caf5
 text-wrong-color=f7768e
 
 # inside
-inside-clear-color=1a1b26
-inside-color=1a1b26
-inside-ver-color=1a1b26
-inside-wrong-color=1a1b26
+inside-clear-color=1a1b2680
+inside-color=1a1b2680
+inside-ver-color=1a1b2680
+inside-wrong-color=1a1b2680
 
 # line
 line-clear-color=1a1b26

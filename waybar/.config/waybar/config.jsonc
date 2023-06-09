@@ -6,30 +6,28 @@
   "passtrough": false,
   "gtk-layer-shell": true,
   "height": 30,
-  "spacing": 5,
+  "spacing": 10,
   "modules-left": [
+    "custom/separator",
     "cpu",
-    "custom/separator",
     "memory",
-    "custom/separator",
     "disk",
     "custom/separator",
     "wlr/workspaces"
   ],
-  "modules-center": [],
+  "modules-center": [
+    "clock"
+  ],
   "modules-right": [
     "tray",
     "custom/separator",
     "network",
     // uncomment if on laptop
-    "custom/separator",
     "battery",
-    "custom/separator",
+    "backlight",
     "pulseaudio",
-    "custom/separator",
     "hyprland/language",
-    "custom/separator",
-    "clock"
+    "custom/separator"
   ],
   "hyprland/window": {
     "format": "{}"
@@ -43,18 +41,18 @@
   },
   "cpu": {
     "interval": 10,
-    "format": " CPU {usage}%",
+    "format": " {usage}%",
     "max-length": 10,
     "on-click": ""
   },
   "memory": {
     "interval": 30,
-    "format": " Memory {}%",
+    "format": " {}%",
     "on-click": "killall btop || kitty --title btop sh -c 'btop'",
     "max-length": 50
   },
   "disk": {
-    "format": " Disk {percentage_used}%",
+    "format": " {percentage_used}%",
     "tooltip": true,
     "interval": 30
   },
@@ -83,6 +81,21 @@
       ""
     ]
   },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "󰃚",
+      "󰃛",
+      "󰃜",
+      "󰃝",
+      "󰃝",
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ],
+    "scroll-step": 5
+  },
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "tooltip": false,
@@ -109,8 +122,8 @@
   },
   "network": {
     "format": "{ifname}",
-    "format-wifi": "  Wifi {signalStrength}%",
-    "format-ethernet": "󰈀 Ethernet",
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀 ",
     "format-disconnected": "󰈂 Disconnected",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
@@ -121,10 +134,10 @@
   },
   "hyprland/language": {
     "format": " {}",
-    "format-en": "ENG",
-    "format-pt": "PT-BR"
+    "format-en": "en-us",
+    "format-pt": "pt-br"
   },
   "clock": {
-    "format": "{:<span color='#ffffff'> </span>%A, %B %d  <span color='#ffffff'>󱑒</span> %I:%M %p}"
+    "format": "{:<span color='#ffffff'>󱑒</span> %I:%M %p  <span color='#ffffff'> </span>%b %d}"
   }
 }
