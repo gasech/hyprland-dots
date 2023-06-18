@@ -6,7 +6,7 @@
   "passtrough": false,
   "gtk-layer-shell": true,
   "height": 30,
-  "spacing": 10,
+  "spacing": 7,
   "modules-left": [
     "custom/separator",
     "cpu",
@@ -22,7 +22,6 @@
     "tray",
     "custom/separator",
     "network",
-    // uncomment if on laptop
     "battery",
     "backlight",
     "pulseaudio",
