@@ -15,7 +15,7 @@ _SHADOW_SIZE_='100x40+0+16'  # [ weight ] x [ radius ] + [ horizontal ] x [ vert
 _ROUNDED_CORNER_=8
 # Author Config
 _AUTHOR_POST_=( 'South' '+0+15' )
-_AUTHOR_NAME_=" $USER"
+_AUTHOR_NAME_=""
 _AUTHOR_COLOR_='#b4befe'
 # Get Lists Font With "convert -list font | grep -iE 'font:.*' | nl"
 _FONT_SIZE_=11

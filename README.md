@@ -55,7 +55,7 @@ This installation is going to take a while depending on your system.
 | XDG Desktop Portal  | xdg-desktop-portal-hyprland-git  |
 
 ```bash
-yay -S hyprland-git qt5-wayland qt6-wayland waybar-hyprland-git swaybg xdg-desktop-portal-hyprland-git
+yay -S hyprland-git qt5-wayland qt6-wayland waybar swaybg xdg-desktop-portal-hyprland-git
 ```
 
 If you are not using a NVIDIA GPU, please delete the lines 9 to 13 in `hypr/.config/hypr/hyprland.conf`
@@ -86,7 +86,7 @@ Now execute Hyprland in tty with `Hyprland`, exit Hyprland by pressing `Super + 
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S bat btop dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv noto-fonts-emoji newsboat nm-connection-editor pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
+yay -S bat btop dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv newsboat nm-connection-editor noto-fonts-emoji pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
 ```
 
 ### Zsh shell with Zap

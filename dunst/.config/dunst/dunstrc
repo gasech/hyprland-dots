@@ -3,7 +3,6 @@
     indicate_hidden = yes
 
     offset = 10x10
-
     notification_height = 4
 
     separator_height = 2

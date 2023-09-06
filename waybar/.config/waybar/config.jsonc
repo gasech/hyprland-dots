@@ -13,7 +13,7 @@
     "memory",
     "disk",
     "custom/separator",
-    "wlr/workspaces"
+    "hyprland/workspaces"
   ],
   "modules-center": [
     "clock"
@@ -31,12 +31,8 @@
   "hyprland/window": {
     "format": "{}"
   },
-  "wlr/workspaces": {
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
-    "all-outputs": true,
-    "on-click": "activate",
-    "format": "{name}"
+  "hyprland/workspaces": {
+    "format": "{name}",
   },
   "cpu": {
     "interval": 10,
