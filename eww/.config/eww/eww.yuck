@@ -1,0 +1,31 @@
+; global components 
+(include "variables.yuck")
+(include "windows.yuck")
+
+; osd
+(include "modules/osd.yuck")
+
+; bar components 
+(include "modules/bar.yuck")
+(include "modules/workspaces.yuck")
+(include "modules/current_window.yuck")
+(include "modules/center_indicator.yuck")
+(include "modules/language.yuck")
+(include "modules/right_indicator.yuck")
+
+; center dock
+(include "modules/center_dock.yuck")
+
+; right dock and components
+(include "modules/right_dock.yuck")
+(include "modules/notifications.yuck")
+(include "modules/quick_settings.yuck")
+(include "modules/music.yuck")
+(include "modules/tools.yuck")
+
+; notifications popup
+(include "modules/notifications_popup.yuck")
+
+; powermenu
+(include "modules/powermenu.yuck")
+

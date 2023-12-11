@@ -1,0 +1,53 @@
+(defwidget right_dock []
+  (revealer :transition "slideleft" :reveal {open_right_dock} :duration {ANIM_DURATION}
+    (box :orientation "v" :space-evenly false
+      (box :orientation "v" :space-evenly false :class "dock"
+        (quick_settings)
+        (controls)
+        (tools)
+      )
+      (notifications)
+      (music)
+    )
+  )
+)
+
+(defwidget controls []
+  (box :class "controlsbox"
+       :orientation "v"
+       :space-evenly false
+       :spacing 16
+    (box :orientation "h"
+         :space-evenly "false"
+         :class "slider active"
+      (box :class "label"
+        ""
+      )
+      (scale :value volume
+             :hexpand true
+             :onchange "pamixer --set-volume {}"
+             :min 0
+             :max 101)
+      (box :class "scale-label"
+           "${volume}%")
+    )
+    (box 
+      :orientation "h"
+     :space-evenly "false"
+     :class "slider active"
+      (box 
+        :class "label"
+        "󰃠"
+      )
+      (scale 
+             :hexpand true
+             :value {brightness.level}
+             :onchange "brightnessctl set {}%"
+             :min 0
+             :max 101)
+      (box :class "scale-label"
+             :halign "start"
+           "${brightness.level}%")
+    )
+  )
+)

@@ -1,12 +1,12 @@
-# 🌌 Hyprland Dotfiles
+# 🌌 Hyprland + Eww dotfiles
 
 ![Screenshot 1](https://raw.githubusercontent.com/gasech/hyprland-dots/main/assets/screenshot1.png)
 ![Screenshot 2](https://raw.githubusercontent.com/gasech/hyprland-dots/main/assets/screenshot2.png)
-![Screenshot 3](https://raw.githubusercontent.com/gasech/hyprland-dots/main/assets/screenshot3.png)
 
 ## Sections
 <!-- vim-markdown-toc Marked -->
 
+* [Features](#features)
 * [Requirements](#requirements)
 * [Installation Guide](#installation-guide)
     * [Yay (AUR Helper)](#yay-(aur-helper))
@@ -16,9 +16,17 @@
     * [Copying config with Stow](#copying-config-with-stow)
     * [Downloading a Nerd Font](#downloading-a-nerd-font)
     * [GTK-XFCE Theme and Icons](#gtk-xfce-theme-and-icons)
-* [Credits](#credits)
+* [Other dotfiles that inspired this rice](#other-dotfiles-that-inspired-this-rice)
 
 <!-- vim-markdown-toc -->
+
+## Features
+
+- Light/Dark Mode
+- Night Light
+- Color Picker
+- Dynamic wallpaper colors
+- Screenshot full and area
 
 ## Requirements
 * Fresh installed Arch Linux 
@@ -50,43 +58,35 @@ This installation is going to take a while depending on your system.
 |-|--|
 | Hyprland + Wayland  | hyprland-git |
 | QT Wayland Support | qt5-wayland qt6-wayland |
-| Status Bar  | waybar-hyprland-git |
-| Wallpaper | swagbg |
+| Widgets | eww-git |
+| Wallpaper | swww |
 | XDG Desktop Portal  | xdg-desktop-portal-hyprland-git  |
 
 ```bash
-yay -S hyprland-git qt5-wayland qt6-wayland waybar swaybg xdg-desktop-portal-hyprland-git
+yay -S hyprland-git qt5-wayland qt6-wayland eww-git swww xdg-desktop-portal-hyprland-git
 ```
 
-If you are not using a NVIDIA GPU, please delete the lines 9 to 13 in `hypr/.config/hypr/hyprland.conf`
-```
-9  - | env = LIBVA_DRIVER_NAME, nvidia
-10 - │ env = XDG_SESSION_TYPE, wayland
-11 - │ env = __GL_GSYNC_ALLOWED, 0
-12 - │ env = __GLX_VENDOR_LIBRARY_NAME, nvidia
-13 - │ env = GBM_BACKEND, nvidia-drm
-```
 Now execute Hyprland in tty with `Hyprland`, exit Hyprland by pressing `Super + SHIFT + Q` or open kitty with `Super + Return` 
 
 ### Packages 
 
 | Type | Package(s)    |
 |--------------- | --------------- |
-| Audio  | pamixer pavucontrol pipewire-pulse |
+| Audio | pamixer pavucontrol pipewire-pulse |
 | Browser | firefox | 
-| Authentication Agent | polkit-kde-agent  |
+| Authentication Agent | polkit-kde-agent |
 | Launcher | wofi |
 | File Manager | ffmpegthumbnailer file-roller gvfs thunar thunar-archive-plugin |
 | Notifications | dunst  |
-| Misc | bat btop feh mpv newsboat nm-connection-editor noto-fonts-emoji tldr stow wl-clipboard unzip yt-dlp |
+| Misc | btop feh mpv newsboat nm-connection-editor noto-fonts-emoji tldr stow wl-clipboard unzip yt-dlp |
 | Terminal Emulator | kitty exa zsh |
-| Screenshotting | grimblast-git |
-| Screen Lock | swaylock-effects wlogout |
+| Screenshotting | grim slurp |
+| Screen Lock | swaylock-effects |
 
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S bat btop dunst exa feh ffmpegthumbnailer file-roller firefox grimblast-git gvfs kitty mpv newsboat nm-connection-editor noto-fonts-emoji pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
+yay -S exa feh ffmpegthumbnailer file-roller firefox gvfs kitty mpv newsboat nm-connection-editor noto-fonts-emoji pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
 ```
 
 ### Zsh shell with Zap
@@ -114,15 +114,10 @@ cd ~
 git clone https://github.com/gasech/hyprland-dots.git
 cd hyprland-dots 
 
-# stows only zsh
-stow zsh 
-
-# multiple stow 
-stow kitty newsboat 
-
 # stows anything that is in a folder (ignores README.md)
 stow */ 
 ```
+
 
 ### Downloading a Nerd Font
 Nerd fonts allows you to have nice unicode icons and they look really nice, I personally use CascadiaCode:
@@ -144,6 +139,7 @@ git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
 
 # Installs theme
 sudo cp -r Tokyo-Night-GTK-Theme/themes/Tokyonight-Dark-BL-LB /usr/share/themes/
+
 # Installs icons
 sudo cp -r Tokyo-Night-GTK-Theme/icons/Tokyonight-Dark /usr/share/icons/
 
@@ -151,6 +147,6 @@ sudo cp -r Tokyo-Night-GTK-Theme/icons/Tokyonight-Dark /usr/share/icons/
 rm -r Tokyo-Night-GTK-Theme/
 ```
 
-## Credits 
-* [linuxmobile's hyprland dotfiles](https://github.com/linuxmobile/hyprland-dots)
-* [Chris Titus Tech's hyprland dotfiles](https://github.com/ChrisTitusTech/hyprland-titus/)
+## Other dotfiles that inspired this rice
+* [juminai's hyprland dotfiles](https://github.com/juminai/dotfiles)
+* [linkfrg's hyprland dotfiles](https://github.com/linkfrg/dotfiles)

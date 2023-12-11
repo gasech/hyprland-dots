@@ -1,0 +1,3 @@
+(defwidget current_window []
+  (label :class "current-window" :text {window})
+)

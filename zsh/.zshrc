@@ -15,30 +15,33 @@ plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting" "122dc46"
 
 # zap prompt (theme)
-plug "zap-zsh/atmachine-prompt"
+plug "gasech/simplest-prompt"
 
-# zsh
+# zsh completion
 plug "esc/conda-zsh-completion"
 
 # alias
-alias zshconfig="lvim ~/.zshrc"
-alias hyprconfig="lvim ~/.config/hypr/hyprland.conf"
-alias lvimconfig='lvim ~/.config/lvim/config.lua'
-
-alias cat='bat'
-alias nvim='lvim'
-
+alias zshc="lvim ~/.zshrc"
+alias hyprc="lvim ~/.config/hypr/hyprland.conf"
+alias lvimc='lvim ~/.config/lvim/config.lua'
+alias notes='lvim ~/Documents/notes.md'
 alias gcl='git clone --depth 1'
 alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
-
 alias ls="exa -la --icons"
 alias lst="exa -a --icons --tree -I .git"
+
+
+
+# bun completions
+[ -s "/home/gab/.bun/_bun" ] && source "/home/gab/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-nvm use 18

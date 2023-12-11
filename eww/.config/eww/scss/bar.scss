@@ -1,0 +1,12 @@
+.bar {
+  @include window;
+  padding: 0.3rem 0.5rem;
+  margin: 0rem 1rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.current-window {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+}

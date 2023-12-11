@@ -1,0 +1,63 @@
+(defwidget tools []
+  (box 
+    :orientation "h" 
+    :space-evenly true
+    :spacing 4
+    :class "tools"
+    (picker)
+    (screenshot_full)
+    (screenshot_area)
+    (update_system)
+    (random_wallpaper)
+    (select_wallpaper)
+  )
+)
+
+
+(defwidget picker []
+  (button 
+    :onclick "sleep 0.1 && scripts/picker.sh &" 
+    :tooltip "Color picker"
+    :class "tool" "" 
+  )
+)
+
+(defwidget update_system []
+  (button 
+    :onclick "sleep 0.1 && kitty yay &" 
+    :tooltip "Update System"
+    :class "tool" "" 
+  )
+)
+
+(defwidget screenshot_area []
+  (button 
+    :onclick "sleep 0.1 && exec ~/.config/hypr/scripts/screenshot crop &" 
+    :tooltip "Screenshot area"
+    :class "tool" "󰆞"
+  )
+)
+
+(defwidget screenshot_full []
+  (button 
+    :onclick "sleep 0.1 && exec ~/.config/hypr/scripts/screenshot full &" 
+    :tooltip "Screenshot full"
+    :class "tool" "󰆟"
+  )
+)
+
+(defwidget random_wallpaper []
+  (button 
+    :onclick "sleep 0.1 && exec ~/.config/eww/scripts/wallpaper.sh random &" 
+    :tooltip "Random wallpaper"
+    :class "tool" ""
+  )
+)
+
+(defwidget select_wallpaper []
+  (button 
+    :onclick "sleep 0.1 && exec ~/.config/eww/scripts/wallpaper.sh select &" 
+    :tooltip "Select wallpaper"
+    :class "tool" "󰸉"
+  )
+)

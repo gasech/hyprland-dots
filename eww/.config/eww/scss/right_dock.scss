@@ -1,0 +1,36 @@
+.controlsbox {
+  @include widget-box;
+  margin-top: 1rem;
+}
+
+.slider {
+  .label {
+    padding-right: 20px;
+    font-size: 2rem;
+  }
+  .scale-label {
+    min-width: 40px;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  trough {
+    background-color: rgba(255, 255, 255, 0.1);
+    min-height: 6px;
+    border-radius: 100px;
+
+    highlight {
+      background-color: $primary;
+      border-radius: 100px;
+    }
+  }
+}
+
+.active {
+  trough {
+    slider {
+      background: $primary;
+      border-radius: 100%;
+      margin: -8px;
+    }
+  }
+}

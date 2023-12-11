@@ -1,0 +1,13 @@
+(defwidget center_indicator []
+  (button 
+    :onclick "eww update open_center_dock=${open_center_dock ? "false" : "true"}" 
+    :class "indicator"
+    (box 
+      :orientation "h" 
+      :space-evenly false 
+      (label 
+         :text {formattime(EWW_TIME, "%a %d/%m - %H:%M")}
+      )
+    )
+  )
+)

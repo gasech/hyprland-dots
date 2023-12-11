@@ -1,0 +1,15 @@
+(defwidget workspaces []
+  (box 
+    :orientation "h" 
+    :space-evenly false 
+    :class "workspaces" 
+    :hexpand true
+    (for workspace in {workspaces.workspaces}
+      (button 
+        :class "workspace ${workspaces.active == workspace.id ? "current" : ""}"
+        :onclick "hyprctl dispatch workspace ${workspace.id}"
+        "${workspace.id}"
+      )
+    )
+  )
+)

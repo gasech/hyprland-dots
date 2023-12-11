@@ -1,0 +1,39 @@
+; VARS
+(defvar bluetooth "{}")
+(defvar nightlight true)
+(defvar open_center_dock false)
+(defvar open_right_dock false)
+(defvar open_osd false)
+(defvar ANIM_DURATION "500ms")
+
+; POLLS
+(defpoll battery :interval "1s"	"scripts/battery.sh")
+(defpoll brightness :interval "0.5s" "scripts/brightness.sh")
+
+; LISTENS
+(deflisten mpris :initial "{}" "scripts/mpris.sh")
+(deflisten mpris_positions :initial "{}" "scripts/positions.sh")
+(deflisten network :initial '{"essid": "lo", "signal": ""}' "scripts/network.sh")
+(deflisten kb_layout :initial "en" "scripts/get_kb_layout.sh")
+(deflisten volume :initial "0" "scripts/volume.sh")
+
+(deflisten microphone :initial false "scripts/microphone.sh")
+(deflisten do-not-disturb :initial false "scripts/notifications.sh getdnd")
+
+; hyprland
+(deflisten workspaces "scripts/hyprland.sh workspaces")
+(deflisten window "scripts/hyprland.sh window")
+
+(deflisten weather 
+  :initial "{\"temp\": 23.62, 
+             \"temp_min\": 0, 
+             \"temp_max\": 0, 
+             \"feels_like\": 0, 
+             \"humidity\": 0, 
+             \"description\": \"N/A\", 
+             \"city\": \"N/A\", 
+             \"icon\": \"\N/A\", 
+             \"icon_color\": \"#9ec3c4\"}" "scripts/weather.py"
+)
+(deflisten current_theme :initial "dark" "scripts/material.py --current")
+(deflisten notifications :initial '{"count": 0, "notifications": [], "popups": []}' "scripts/notifications.sh current")

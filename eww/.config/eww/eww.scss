@@ -1,0 +1,55 @@
+* {
+  all: unset;
+  font-family: CaskadyaNerdFont;
+  font-weight: 400;
+}
+
+@mixin window {
+  background-color: $background;
+  color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+}
+
+@mixin icon {
+  font-size: 2rem;
+}
+
+@mixin large-icon {
+  font-size: 3rem;
+}
+
+@mixin widget-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+tooltip {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+@import "scripts/colors/colors.scss";
+@import "scripts/colors/background.scss";
+
+@import "scss/bar.scss";
+@import "scss/powermenu.scss";
+
+@import "scss/dock.scss";
+@import "scss/center_dock.scss";
+@import "scss/right_dock.scss";
+@import "scss/notifications_popup.scss";
+
+@import "scss/language.scss";
+@import "scss/weather.scss";
+@import "scss/clock_date.scss";
+@import "scss/quick_settings.scss";
+@import "scss/volume.scss";
+@import "scss/workspaces.scss";
+@import "scss/music.scss";
+@import "scss/indicator.scss";
+@import "scss/notifications.scss";
+@import "scss/tools.scss";

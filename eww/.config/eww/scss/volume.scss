@@ -1,0 +1,70 @@
+.volume-osd {
+  @include window;
+  min-width: 25rem;
+  margin-bottom: 4rem;
+}
+
+.volume-control-center {
+  margin-top: 1rem;
+}
+
+.volume-scale trough {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  min-height: 2.25rem;
+}
+
+.volume-scale trough highlight {
+  background-color: $primary;
+  border-radius: 1rem;
+  min-height: 2.25rem;
+}
+
+.volume-icon {
+  margin-left: 0.75rem;
+  font-size: 2rem;
+
+  &.less {
+    color: $onSurface;
+  }
+
+  &.more {
+    color: $surface;
+  }
+}
+
+.volume-arrow {
+  color: $primary;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  min-width: 2.25rem;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+.volume-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.volume-mute {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $onSurface;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  min-width: 2.25rem;
+  border-radius: 2rem;
+  transition: 0.3s;
+
+  &.active {
+    background-color: $primary;
+    color: $surface;
+  }
+
+  &.active:hover {
+    background-color: mix($primary, $onSurface, 70%);
+  }
+}
+
+.volume-mute:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

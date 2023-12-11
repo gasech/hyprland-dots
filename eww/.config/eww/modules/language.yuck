@@ -1,0 +1,20 @@
+(defwidget language []
+  (button 
+    :class "language" 
+    :onclick "scripts/switch_kb_layout.sh &"
+    (box
+      :orientation "h"
+      :space-evenly true
+      :spacing 2
+      (label 
+        :class "keyboard-icon" 
+        :text "" 
+        :yalign 0
+      )
+      (label 
+        :yalign 0.5
+        :text {kb_layout}
+      )
+    )
+  )
+)

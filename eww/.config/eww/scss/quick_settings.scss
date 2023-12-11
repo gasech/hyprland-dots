@@ -1,0 +1,58 @@
+.quick_settings_button {
+  transition: 500ms;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $onSurface;
+  border-radius: 1rem;
+  padding: 0.6rem;
+  font-size: 1.05rem;
+}
+
+.quick_settings_button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.quick_settings_button_toggled {
+  background-color: $primary;
+  color: $surface;
+}
+
+.quick_settings_button_toggled:hover {
+  background-color: mix($primary, $onSurface, 100%);
+}
+
+.quick-settings-icon {
+  font-size: 2rem;
+}
+
+.quick-settings-info {
+  margin-left: 1rem;
+}
+
+.quick-settings-state {
+  font-size: 0.9rem;
+  color: $onSurfaceVariant;
+}
+
+.quick-settings-state-enabled {
+  color: $surfaceVariant;
+}
+
+.left-top-plite {
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.left-bottom-plite {
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.right-top-plite {
+  margin-left: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.right-bottom-plite {
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
+}

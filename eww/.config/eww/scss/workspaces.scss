@@ -1,0 +1,25 @@
+.workspaces {
+  border-radius: 1rem;
+  padding: 0rem;
+  margin: 0.25rem 0.3rem;
+}
+
+.workspace {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  margin: 0.2rem 0.05rem;
+  padding: 0.2rem 0.8rem;
+  transition: 0.3s;
+
+  &.current {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+  }
+}
+
+.workspace:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  &.current {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
