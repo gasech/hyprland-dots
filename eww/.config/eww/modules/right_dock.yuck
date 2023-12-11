@@ -37,7 +37,7 @@
      :class "slider active"
       (box 
         :class "label"
-        "󰃠"
+        {brightness.icon}
       )
       (scale 
              :hexpand true
