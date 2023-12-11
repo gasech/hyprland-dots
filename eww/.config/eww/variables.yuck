@@ -20,9 +20,9 @@
 (deflisten microphone :initial false "scripts/microphone.sh")
 (deflisten do-not-disturb :initial false "scripts/notifications.sh getdnd")
 
-; hyprland
-(deflisten workspaces "scripts/hyprland.sh workspaces")
-(deflisten window "scripts/hyprland.sh window")
+(deflisten notifications :initial '{"count": 0, "notifications": [], "popups": []}' "scripts/notifications.sh current")
+
+(deflisten hyprland "scripts/hyprland.sh")
 
 (deflisten weather 
   :initial "{\"temp\": 23.62, 
@@ -35,5 +35,5 @@
              \"icon\": \"\N/A\", 
              \"icon_color\": \"#9ec3c4\"}" "scripts/weather.py"
 )
+
 (deflisten current_theme :initial "dark" "scripts/material.py --current")
-(deflisten notifications :initial '{"count": 0, "notifications": [], "popups": []}' "scripts/notifications.sh current")

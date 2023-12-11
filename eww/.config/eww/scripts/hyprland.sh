@@ -1,37 +1,19 @@
 #!/usr/bin/env bash
 
-window_class() {
-  echo `hyprctl activewindow -j | jq --raw-output .class`
-}
+current_window() {
+  title=$(hyprctl activewindow -j | jq -r '"\(.class) - \(.title)"')
 
-window_title() {
-  class=$(window_class)
-  title=$(hyprctl activewindow -j | jq --raw-output .title)
   max_length=45
-  truncated_result=$(echo "$class - $title" | cut -c1-$max_length)  
-  if [[ $class == "null" ]]; then
+  truncated_result=$(echo "$title" | cut -c1-$max_length)  
+  if [[ $truncated_result == "null - null" ]]; then
     echo "Desktop" 
   else 
     echo "$truncated_result"
   fi
 }
 
-workspaces() {
-  echo "{ \"workspaces\": $(hyprctl workspaces -j | jq -c 'sort_by(.id)'), \"active\": $(hyprctl monitors -j | jq '.[] | select(.focused) | .activeWorkspace.id')}"
+print_json() {
+  echo "{\"workspaces\": $(hyprctl workspaces -j | jq -c 'sort_by(.id)'), \"active\": $(hyprctl monitors -j | jq '.[] | select(.focused) | .activeWorkspace.id'), \"current_window\": \"$(current_window)\"}"
 }
 
-if [[ $1 == 'workspaces' ]]; then 
-  workspaces
-
-  socat -u UNIX-CONNECT:/tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock - | while read -r line; do
-    workspaces
-  done
-fi
-
-if [[ $1 == 'window' ]]; then 
-  window_title
-
-  socat -u UNIX-CONNECT:/tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock - | while read -r line; do
-    window_title
-  done
-fi
+socat -U - UNIX-CONNECT:/tmp/hypr/"$HYPRLAND_INSTANCE_SIGNATURE"/.socket2.sock | while read -r line; do print_json "$line"; done
