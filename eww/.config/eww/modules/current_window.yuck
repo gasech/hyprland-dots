@@ -1,3 +1,6 @@
 (defwidget current_window []
-  (label :class "current-window" :text {hyprland.current_window})
+  (label 
+    :class "current-window" 
+    :text {strlength(hyprland.current_window) > 44 ? "${hyprland.current_window}" : "${hyprland.current_window}..."}
+  )
 )
