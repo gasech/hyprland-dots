@@ -1,5 +1,4 @@
 ; VARS
-(defvar bluetooth "{}")
 (defvar nightlight true)
 (defvar open_center_dock false)
 (defvar open_right_dock false)
@@ -9,6 +8,7 @@
 ; POLLS
 (defpoll battery :interval "1s"	"scripts/battery.sh")
 (defpoll brightness :interval "0.5s" "scripts/brightness.sh")
+(defpoll bluetooth :interval "2s" "scripts/bluetooth.sh")
 
 ; LISTENS
 (deflisten mpris :initial "{}" "scripts/mpris.sh")

@@ -7,6 +7,7 @@ playerctl metadata -F -f '{{playerName}} {{title}} {{artist}} {{mpris:artUrl}} {
     artUrl=$(playerctl metadata -f "{{mpris:artUrl}}")
     status=$(playerctl metadata -f "{{status}}")
     length=$(playerctl metadata -f "{{mpris:length}}")
+
     if [[ $length != "" ]]; then
         length=$(($length / 1000000))
         length=$(echo "($length + 0.5) / 1" | bc)
@@ -22,5 +23,6 @@ playerctl metadata -F -f '{{playerName}} {{title}} {{artist}} {{mpris:artUrl}} {
                 --arg length "$length" \
                 --arg lengthStr "$lengthStr" \
                 '{name: $name, title: $title, artist: $artist, artUrl: $artUrl, status: $status, length: $length, lengthStr: $lengthStr}' )
+
     echo $JSON_STRING
 done

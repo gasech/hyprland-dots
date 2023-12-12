@@ -1,17 +1,34 @@
 (defwidget bar []
-  (box :class "bar" :orientation "h" :space-evenly true
+  (box :class "barr" :orientation "h" :space-evenly true
     (box :orientation "h" :space-evenly false :halign "start"
       (workspaces)
       (current_window)
     )
-
     (box :orientation "h" :space-evenly false :halign "center"
       (center_indicator)
     )
-
     (box :orientation "h" :space-evenly false :halign "end"
       (language)
       (right_indicator)
+      (notifications_indicator)
+    )
+  )
+)
+
+(defwidget notifications_indicator []
+  (button 
+    :class "indicator"
+    (box 
+      :orientation "h" 
+      :space-evenly true 
+      (label
+        :class "icon"
+        :text {notifications.count > 0 ? "󱅫" : "󰂚"}
+      )
+      (label
+        :style "font-weight: 550;"
+        :text "${notifications.count}"
+      )
     )
   )
 )

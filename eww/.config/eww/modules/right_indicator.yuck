@@ -55,7 +55,7 @@
 
 (defwidget bluetooth_icon []
   (state_icon 
-    :condition false
+    :condition {bluetooth}
     :text "󰂯"
     :tooltip "Bluetooth on"
     :microphone false
