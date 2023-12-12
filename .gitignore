@@ -2,3 +2,10 @@
 newsboat/.config/newsboat/urls
 newsboat/.config/newsboat/cache.db
 newsboat/.config/newsboat/cache.db.lock
+
+# eww generated colors
+eww/.config/eww/scripts/colors/colors-gradience.json
+eww/.config/eww/scripts/colors/colors-hyprland.conf
+eww/.config/eww/scripts/colors/colors.css
+eww/.config/eww/scripts/colors/colors.scss
+eww/.config/eww/scripts/colors/wall.png
