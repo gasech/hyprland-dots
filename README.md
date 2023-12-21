@@ -78,7 +78,7 @@ Now execute Hyprland in tty with `Hyprland`, exit Hyprland by pressing `Super + 
 | Launcher | wofi |
 | File Manager | ffmpegthumbnailer file-roller gvfs thunar thunar-archive-plugin |
 | Notifications | dunst  |
-| Misc | btop feh mpv newsboat nm-connection-editor noto-fonts-emoji tldr stow wl-clipboard unzip yt-dlp |
+| Misc | btop brightnessctl feh mpv newsboat nm-connection-editor noto-fonts-emoji tldr stow wl-clipboard unzip yt-dlp |
 | Terminal Emulator | kitty exa zsh |
 | Screenshotting | grim slurp |
 | Screen Lock | swaylock-effects |

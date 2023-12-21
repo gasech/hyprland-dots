@@ -12,6 +12,7 @@
 (include "modules/center_indicator.yuck")
 (include "modules/language.yuck")
 (include "modules/right_indicator.yuck")
+(include "modules/notifications_indicator.yuck")
 
 ; center dock
 (include "modules/center_dock.yuck")

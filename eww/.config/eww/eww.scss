@@ -1,6 +1,6 @@
 * {
   all: unset;
-  font-family: CaskadyaNerdFont;
+  font-family: Caskadya Cove Nerd Font;
   font-weight: 400;
 }
 
@@ -21,15 +21,14 @@
 }
 
 @mixin widget-box {
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 tooltip {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 2rem;
-  padding: 0.5rem;
+  padding: 0rem 2rem;
 }
 
 @import "scripts/colors/colors.scss";

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+eww kill
 eww daemon
 sleep 1
 eww open-many bar osd right_dock center_dock notifications_popup

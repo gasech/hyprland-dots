@@ -3,7 +3,7 @@
 (defvar open_center_dock false)
 (defvar open_right_dock false)
 (defvar open_osd false)
-(defvar ANIM_DURATION "500ms")
+(defvar ANIM_DURATION "400ms")
 
 ; POLLS
 (defpoll battery :interval "1s"	"scripts/battery.sh")

@@ -1,5 +1,5 @@
 (defwindow bar
-  :monitor 1
+  :monitor 0
   :geometry (geometry :width "100%"
                       :anchor "top center")
   :exclusive true
@@ -8,7 +8,7 @@
 )
 
 (defwindow right_dock 
-  :monitor 1
+  :monitor 0
   :stacking "overlay"
   :geometry (geometry
               :anchor "top right"
@@ -18,7 +18,7 @@
 )
 
 (defwindow center_dock 
-  :monitor 1
+  :monitor 0
   :stacking "overlay"
   :geometry (geometry
               :anchor "top center"
@@ -28,7 +28,7 @@
 )
 
 (defwindow notifications_popup
-  :monitor 1
+  :monitor 0
   :stacking "overlay"
   :geometry (geometry
                   :anchor "top center"
@@ -38,7 +38,7 @@
 )
 
 (defwindow osd
-  :monitor 1
+  :monitor 0
   :stacking "overlay"
   :geometry 
     (geometry 
@@ -49,12 +49,12 @@
 )
 
 (defwindow powermenu
-  :monitor 1
+  :monitor 0
   :stacking "overlay"
   :geometry (geometry 
                   :anchor "center"
-                  :width "100%"
-                  :height "110%")
+                  :width "99%"
+                  :height "109%")
   :namespace "eww-blur-full"
   (powermenu)
 )
