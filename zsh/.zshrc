@@ -1,23 +1,12 @@
 export PATH="$HOME/.local/bin:$PATH"
 
+# zap setup & plugins 
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
-
-# supercharge  
 plug "zap-zsh/supercharge"
-
-# exa (always use it after supercharge)
 plug "zap-zsh/exa"
-
-# auto suggestions
 plug "zsh-users/zsh-autosuggestions"
-
-# syntax highlight
 plug "zsh-users/zsh-syntax-highlighting" "122dc46"
-
-# zap prompt (theme)
 plug "gasech/simplest-prompt"
-
-# zsh completion
 plug "esc/conda-zsh-completion"
 
 # alias
@@ -33,7 +22,23 @@ alias gp='git push'
 alias ls="exa -la --icons"
 alias lst="exa -a --icons --tree -I .git"
 
+# pomodoro shotout to bashbunni, requirements: 
+# - yay -S lolcat timer-bin
 
+declare -A pomo_options
+pomo_options["work"]="45"
+pomo_options["break"]="10"
+
+pomodoro () {
+  if [ -n "$1" -a -n "${pomo_options["$1"]}" ]; then
+  val=$1
+  echo $val | lolcat
+  timer ${pomo_options["$val"]}m
+  fi
+}
+
+alias work="pomodoro 'work'"
+alias rest="pomodoro 'break'"
 
 # bun completions
 [ -s "/home/gab/.bun/_bun" ] && source "/home/gab/.bun/_bun"
@@ -42,6 +47,7 @@ alias lst="exa -a --icons --tree -I .git"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
