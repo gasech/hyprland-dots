@@ -1,0 +1,137 @@
+* {
+  all: unset;
+  font-family: Caskadya Cove Nerd Font;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+}
+
+tooltip {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Bar */
+.bar-content {
+  padding: 0rem 1rem;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 1rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0rem 0.5rem;
+}
+
+/* Workspaces */
+.workspaces button {
+  border-radius: 0.25rem;
+  margin: 0.2rem 0.05rem;
+  padding: 0.1rem 0.7rem;
+  transition: 0.3s;
+}
+
+.workspaces button,
+.media {
+  background-color: transparent;
+}
+
+.workspaces button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.workspaces button:active,
+.media:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.workspaces button.focused {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Current Window */
+.client-class {
+  margin-left: 0.5rem;
+  margin-top: 2px;
+  font-size: 1.5rem;
+}
+
+.client-title {
+  margin-left: 0.4rem;
+}
+
+/* Keyboard */
+.keyboard-icon {
+  margin-top: 2px;
+  font-size: 1.7rem;
+}
+
+.keyboard-label {
+  margin-left: 2px;
+  font-size: 1.1rem;
+}
+
+/* Indicator */
+.indicators {
+  border-radius: 0.7rem;
+  margin: 0.1rem 0.05rem;
+  padding: 0.1rem 0.5rem;
+  transition: 0.3s;
+}
+
+.indicators:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Notificatiosn Popup */
+window#notifications {
+  all: unset;
+}
+
+window#notifications box.notifications {
+  padding: .5em;
+}
+
+.icon {
+  min-width: 68px;
+  min-height: 68px;
+  margin-right: 1em;
+}
+
+.icon image {
+  font-size: 58px;
+  /* to center the icon */
+  margin: 5px;
+}
+
+.icon box {
+  min-width: 68px;
+  min-height: 68px;
+  border-radius: 7px;
+}
+
+.notification {
+  min-width: 350px;
+  border-radius: 12px;
+  padding: 1em;
+  margin: .5em;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.notification.critical {
+  border: 1px solid lightcoral;
+}
+
+.title {
+  font-size: 1.2em;
+}
+
+.actions .action-button {
+  margin: 0 .4em;
+  margin-top: .8em;
+}
+
+.actions .action-button:first-child {
+  margin-left: 0;
+}
+
+.actions .action-button:last-child {
+  margin-right: 0;
+}
