@@ -13,7 +13,7 @@ plug "esc/conda-zsh-completion"
 alias zshc="lvim ~/.zshrc"
 alias hyprc="lvim ~/.config/hypr/hyprland.conf"
 alias lvimc='lvim ~/.config/lvim/config.lua'
-alias notes='lvim ~/Documents/notes.md'
+alias notes='cd ~/Documents/notes/; lvim index.md'
 alias gcl='git clone --depth 1'
 alias gi='git init'
 alias ga='git add'
@@ -21,6 +21,10 @@ alias gc='git commit -m'
 alias gp='git push'
 alias ls="exa -la --icons"
 alias lst="exa -a --icons --tree -I .git"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -iv"
+alias list-fonts="kitty +list-fonts --psnames"
 
 # pomodoro shotout to bashbunni, requirements: 
 # - yay -S lolcat timer-bin

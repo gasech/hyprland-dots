@@ -18,8 +18,6 @@ select_wallpaper() {
   fi
 
   ~/.config/eww/scripts/material.py --image "$file" 
-
-  eww reload;
 }
 
 get_random_wallpaper() {

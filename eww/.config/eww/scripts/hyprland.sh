@@ -11,6 +11,8 @@ get_icon_by_class_name() {
     echo ""
   elif [[ $class == "thunar" ]]; then
     echo ""
+  elif [[ $class == "VencordDesktop" ]]; then
+    echo "󰙯"
   else
     echo ""
   fi
