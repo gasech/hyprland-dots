@@ -10,10 +10,10 @@ plug "gasech/simplest-prompt"
 plug "esc/conda-zsh-completion"
 
 # aliases
-alias zshc="nvim ~/.zshrc"
-alias hyprc="nvim ~/.config/hypr/hyprland.conf"
-alias nvimc='nvim ~/.config/nvim/config.lua'
-alias notes='cd ~/Documents/notes/; nvim index.md'
+alias zshc="lvim ~/.zshrc"
+alias hyprc="lvim ~/.config/hypr/hyprland.conf"
+alias lvimc='lvim ~/.config/nvim/config.lua'
+alias notes='cd ~/Documents/notes/; lvim index.md'
 alias gcl='git clone --depth 1'
 alias gi='git init'
 alias ga='git add'
