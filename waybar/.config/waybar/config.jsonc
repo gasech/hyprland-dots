@@ -1,0 +1,117 @@
+{
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "exclusive": true,
+  "passtrough": false,
+  "gtk-layer-shell": true,
+  "height": 20,
+  "spacing": 2,
+  "margin-right": 5,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "tray",
+    "hyprland/language",
+    "network",
+    "battery",
+    "backlight",
+    "pulseaudio"
+  ],
+  "hyprland/window": {
+    "format": "{}"
+  },
+  "hyprland/workspaces": {
+    "format": "{name}"
+  },
+  "tray": {
+    "icon-size": 15,
+    "tooltip": false,
+    "spacing": 10
+  },
+  "battery": {
+    "interval": 5,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}",
+    "format-charging": "󰂄 ",
+    "format-plugged": "󰂄 ",
+    "format-icons": [
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹" 
+    ]
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}",
+    "format-icons": [
+      "󰃚 ",
+      "󰃛 ",
+      "󰃜 ",
+      "󰃝 ",
+      "󰃝 ",
+      "󰃞 ",
+      "󰃟 ",
+      "󰃠 "
+    ],
+    "scroll-step": 5
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "tooltip": true,
+    "format-muted": "󰖁 Mute",
+    "on-click-right": "pamixer -t",
+    "on-click": "killall pavucontrol || pavucontrol",
+    "on-scroll-up": "pamixer -i 5",
+    "on-scroll-down": "pamixer -d 5",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [
+        " ",
+        " ",
+        "󰕾 ",
+        " "
+      ]
+    }
+  },
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": " ",
+    "format-ethernet": "󰈀 ",
+    "format-disconnected": "󰈂 ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} | {ipaddr}/{cidr} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "killall nm-connection-editor || nm-connection-editor ",
+    "max-length": 50
+  },
+  "hyprland/language": {
+    "format": "󰌌 {}",
+    "format-en": "en",
+    "format-pt": "pt"
+  },
+  "clock": {
+    "format": "{: %a %d/%m  %H:%M }"
+  }
+}

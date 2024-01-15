@@ -86,7 +86,7 @@ Now execute Hyprland in tty with `Hyprland`, exit Hyprland by pressing `Super + 
 If you are interested in alternatives for some of these programs, you can go to [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) list. 
 
 ```bash
-yay -S exa feh ffmpegthumbnailer file-roller firefox gvfs kitty mpv newsboat nm-connection-editor noto-fonts-emoji pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
+yay -S eza feh ffmpegthumbnailer file-roller firefox gvfs kitty mpv newsboat nm-connection-editor noto-fonts-emoji pamixer pavucontrol pipewire-pulse polkit-kde-agent stow swaylock-effects thunar thunar-archive-plugin wlogout tldr unzip wl-clipboard wofi yt-dlp zsh 
 ```
 
 ### Zsh shell with Zap

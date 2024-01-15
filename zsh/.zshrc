@@ -9,26 +9,24 @@ plug "zsh-users/zsh-syntax-highlighting" "122dc46"
 plug "gasech/simplest-prompt"
 plug "esc/conda-zsh-completion"
 
-# alias
-alias zshc="lvim ~/.zshrc"
-alias hyprc="lvim ~/.config/hypr/hyprland.conf"
-alias lvimc='lvim ~/.config/lvim/config.lua'
-alias notes='cd ~/Documents/notes/; lvim index.md'
+# aliases
+alias zshc="nvim ~/.zshrc"
+alias hyprc="nvim ~/.config/hypr/hyprland.conf"
+alias nvimc='nvim ~/.config/nvim/config.lua'
+alias notes='cd ~/Documents/notes/; nvim index.md'
 alias gcl='git clone --depth 1'
 alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
-alias ls="exa -la --icons"
-alias lst="exa -a --icons --tree -I .git"
+alias ls="eza -la --icons"
+alias lst="eza -a --icons --tree -I .git"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias rm="rm -iv"
 alias list-fonts="kitty +list-fonts --psnames"
 
-# pomodoro shotout to bashbunni, requirements: 
-# - yay -S lolcat timer-bin
-
+# pomodoro shoutout to bashbunni, requirements: lolcat, timer-bin
 declare -A pomo_options
 pomo_options["work"]="45"
 pomo_options["break"]="10"

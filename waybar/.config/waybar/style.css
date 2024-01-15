@@ -1,0 +1,75 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: NotoSansM Nerd Font, monospace;
+  font-weight: 400;
+  font-size: 14px;
+  min-height: 0;
+}
+
+#window {
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+window#waybar {
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+}
+
+tooltip {
+  border-style: solid;
+}
+
+#custom-updates,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#memory,
+#language,
+#cpu,
+#disk,
+#backlight {
+  padding: 0px 2px;
+  color: white;
+}
+
+#tray {
+  margin-bottom: 0px;
+}
+
+#workspaces button {
+  color: white;
+  padding: 2px 4px;
+}
+
+#workspaces button.active {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+#workspaces button.focused {
+  background-color: rgba(26,27,38,0.8);
+  color: black;
+}
+
+#workspaces button.urgent {
+  color: #11111b;
+  border-radius: 10px;
+}
+
+#workspaces button:hover {
+  background-color: rgba(255,255,255,0.05);
+  color: white;
+}
+
+.modules-left,
+.modules-right {
+  padding-left: 10px;
+  padding-right: 10px;
+}
