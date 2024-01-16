@@ -12,7 +12,7 @@ plug "esc/conda-zsh-completion"
 # aliases
 alias zshc="lvim ~/.zshrc"
 alias hyprc="lvim ~/.config/hypr/hyprland.conf"
-alias lvimc='lvim ~/.config/nvim/config.lua'
+alias lvimc='lvim ~/.config/lvim/config.lua'
 alias notes='cd ~/Documents/notes/; lvim index.md'
 alias gcl='git clone --depth 1'
 alias gi='git init'
