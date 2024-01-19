@@ -7,7 +7,7 @@
   "gtk-layer-shell": true,
   "height": 20,
   "spacing": 2,
-  "margin-right": 5,
+  "padding-right": 5,
   "modules-left": [
     "hyprland/workspaces"
   ],
@@ -77,7 +77,7 @@
   "pulseaudio": {
     "format": "{icon}",
     "tooltip": true,
-    "format-muted": "󰖁 Mute",
+    "format-muted": "󰖁 ",
     "on-click-right": "pamixer -t",
     "on-click": "killall pavucontrol || pavucontrol",
     "on-scroll-up": "pamixer -i 5",
