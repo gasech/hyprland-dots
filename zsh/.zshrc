@@ -10,10 +10,10 @@ plug "gasech/simplest-prompt"
 plug "esc/conda-zsh-completion"
 
 # alias
-alias zshc="lvim ~/.zshrc"
-alias hyprc="lvim ~/.config/hypr/hyprland.conf"
-alias lvimc='lvim ~/.config/lvim/config.lua'
-alias notes='cd ~/Documents/notes/; lvim index.md'
+alias zshc="nvim ~/.zshrc"
+alias hyprc="nvim ~/.config/hypr/hyprland.conf"
+alias nvimc='nvim ~/.config/nvim/init.lua'
+alias notes='cd ~/Documents/notes/; nvim index.md'
 alias gcl='git clone --depth 1'
 alias gi='git init'
 alias ga='git add'
@@ -26,7 +26,7 @@ alias mv="mv -iv"
 alias rm="rm -iv"
 alias list-fonts="kitty +list-fonts --psnames"
 
-# pomodoro shotout to bashbunni, requirements: 
+# pomodoro shoutout to bashbunni, requirements: 
 # - yay -S lolcat timer-bin
 
 declare -A pomo_options
